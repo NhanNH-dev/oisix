@@ -7,18 +7,19 @@
 // }
 body {
   font-family: "Noto Sans JP", sans-serif;
-  width: 100%;
+  margin: 0;
 }
 .background {
+  width: 100%;
   position: relative;
   z-index: 1;
-  .bg-header{
+  .bg-header {
     height: 130px;
     background: #fff;
   }
-  .bg-kanzen{
-    height: 815px;
-    background: #F4F4F4;
+  .bg-kanzen {
+    height: 805px;
+    background: #f4f4f4;
   }
 }
 
@@ -33,7 +34,7 @@ body {
 }
 .tabs {
   position: relative;
-  margin: 0 auto ;
+  margin: 0 auto;
   width: 750px;
 }
 
@@ -41,9 +42,9 @@ body {
   position: absolute;
   z-index: 1000;
   width: 375px;
-  height: 120px;
+  height: 100px;
   left: 0px;
-  top: 0px;
+  top: 30px;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
@@ -54,11 +55,12 @@ body {
 }
 
 .tabs label {
+  top: 20px;
   background: #d3d3d3;
-  padding-top: 20px;
+  padding-top: 10px;
   font-size: 36px;
   line-height: 50px;
-  height: 120px;
+  height: 100px;
   position: relative;
   float: left;
   display: block;
@@ -68,13 +70,7 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   text-align: center;
-  // text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
   border-radius: 20px 20px 0 0;
-  // box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1), -2px 0 2px rgba(0, 0, 0, 0.1);
-}
-.tabs label:checked {
-  height: 80px;
-  background: red;
 }
 .tabs label:after {
   content: "";
@@ -94,18 +90,18 @@ body {
   z-index: 14;
   box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);
 }
-.tabs label:checked {
-  height: 120px;
-}
 
 .tab-label-2 {
   z-index: 13;
 }
 
 .tabs input:checked + label {
+  // transition: all 0.01s;
   background: #2e46d6;
-  height: 80px;
   z-index: 16;
+  top: 0 !important;
+  height: 120px !important;
+  padding-top: 10px !important;
 }
 
 .clear-shadow {
@@ -113,7 +109,7 @@ body {
 }
 
 .content {
-  border-top: 10px solid #2e46d6;
+  border-top: 8px solid #2e46d6;
   // background: #fff;
   position: relative;
   width: 750px;
@@ -121,13 +117,16 @@ body {
   z-index: 15;
   box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.1);
   border-radius: 0 3px 3px 3px;
+  .content-1{
+    width: 100%;
+    height: auto;
+  }
 }
 
 .content div {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 10px 40px;
   z-index: 11;
   opacity: 0;
 

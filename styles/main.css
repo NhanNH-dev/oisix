@@ -1,9 +1,10 @@
 body {
   font-family: "Noto Sans JP", sans-serif;
-  width: 100%;
+  margin: 0;
 }
 
 .background {
+  width: 100%;
   position: relative;
   z-index: 1;
 }
@@ -14,8 +15,8 @@ body {
 }
 
 .background .bg-kanzen {
-  height: 815px;
-  background: #F4F4F4;
+  height: 805px;
+  background: #f4f4f4;
 }
 
 .container {
@@ -42,9 +43,9 @@ body {
   position: absolute;
   z-index: 1000;
   width: 375px;
-  height: 120px;
+  height: 100px;
   left: 0px;
-  top: 0px;
+  top: 30px;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
@@ -56,11 +57,12 @@ body {
 }
 
 .tabs label {
+  top: 20px;
   background: #d3d3d3;
-  padding-top: 20px;
+  padding-top: 10px;
   font-size: 36px;
   line-height: 50px;
-  height: 120px;
+  height: 100px;
   position: relative;
   float: left;
   display: block;
@@ -71,11 +73,6 @@ body {
   font-weight: 500;
   text-align: center;
   border-radius: 20px 20px 0 0;
-}
-
-.tabs label:checked {
-  height: 80px;
-  background: red;
 }
 
 .tabs label:after {
@@ -94,18 +91,16 @@ body {
           box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);
 }
 
-.tabs label:checked {
-  height: 120px;
-}
-
 .tab-label-2 {
   z-index: 13;
 }
 
 .tabs input:checked + label {
   background: #2e46d6;
-  height: 80px;
   z-index: 16;
+  top: 0 !important;
+  height: 120px !important;
+  padding-top: 10px !important;
 }
 
 .clear-shadow {
@@ -113,7 +108,7 @@ body {
 }
 
 .content {
-  border-top: 10px solid #2e46d6;
+  border-top: 8px solid #2e46d6;
   position: relative;
   width: 750px;
   height: auto;
@@ -123,11 +118,15 @@ body {
   border-radius: 0 3px 3px 3px;
 }
 
+.content .content-1 {
+  width: 100%;
+  height: auto;
+}
+
 .content div {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 10px 40px;
   z-index: 11;
   opacity: 0;
   -webkit-transition: opacity linear 0.1s;
