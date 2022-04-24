@@ -389,7 +389,6 @@ body {
 }
 
 .tabs .tab_content.tabRight .tabRight-sangatsu .month3 {
-  width: 100%;
   margin-top: 70px;
   position: absolute;
 }
@@ -450,10 +449,6 @@ body {
   margin-top: 95px;
 }
 
-.tabs .tab_content.tabRight .tabRight-yuryou img {
-  width: 100%;
-}
-
 .tabs .tab_content.tabRight .tabRight-riyu {
   position: absolute;
   top: 555%;
@@ -470,10 +465,6 @@ body {
 
 .tabs .tab_content.tabRight .tabRight-yokuaru .yokuaru {
   margin-bottom: 20px;
-}
-
-.tabs .tab_content.tabRight .tabRight-yokuaru img {
-  width: 100%;
 }
 
 /*ラジオボタンを全て消す*/

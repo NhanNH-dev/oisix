@@ -316,7 +316,7 @@ body {
       position: relative;
       height: 1037px;
       .month3 {
-        width: 100%;
+        // width: 100%;
         margin-top: 70px;
         position: absolute;
       }
@@ -364,9 +364,6 @@ body {
       .yuryou {
         margin-top: 95px;
       }
-      img {
-        width: 100%;
-      }
     }
     .tabRight-riyu {
       position: absolute;
@@ -380,9 +377,6 @@ body {
       top: 645%;
       .yokuaru {
         margin-bottom: 20px;
-      }
-      img {
-        width: 100%;
       }
     }
   }
