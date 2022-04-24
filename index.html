@@ -14,63 +14,250 @@
 
   <body>
     <div class="background">
-      <div class="bg-header"></div>
-      <div class="bg-kanzen"></div>
+      <div class="background-leftside" id="leftSideBg">
+        <div class="bg-kanzen"></div>
+        <div class="bg-sangatsu"></div>
+        <div class="bg-no1">
+          <img src="./assets/leftside/bgno1.png" alt="bgno1" />
+        </div>
+        <div class="bg-4tsu">
+          <img src="./assets/leftside/4tsubg.png" alt="4tsubg" />
+        </div>
+        <div class="bg-ng">
+          <img src="./assets/leftside/ngbg.png" alt="ngbg" />
+        </div>
+        <div class="bg-nayami"></div>
+        <div class="bg-kosarubg">
+          <img src="./assets/leftside/kosarubg.png" alt="kosarubg" />
+        </div>
+        <div class="bg-4tsu2">
+          <img src="./assets/leftside/4tsubg.png" alt="4tsubg" />
+        </div>
+        <div class="bg-tasya"></div>
+        <div class="bg-no1-2">
+          <img src="./assets/leftside/nagarebg.jpg" alt="bgno1" />
+        </div>
+        <div class="bg-yuryo"></div>
+        <div class="bg-kosarubg2">
+          <img src="./assets/leftside/kosarubg.png" alt="kosarubg" />
+        </div>
+        <div class="bg-yokuaru"></div>
+        <div class="footer">
+          <p>Copyright ©　　　 All Rights Reserved.</p>
+        </div>
+      </div>
+      <div class="background-rightside" id="rightSideBg">
+        <div class="bg-kanzen"></div>
+        <div class="bg-threemonth"></div>
+        <div class="bg-warning">
+          <img src="./assets/rightside/bgwarining.png" alt="warning" />
+        </div>
+        <div class="bg-tasya"></div>
+        <div class="bg-konsaru"></div>
+        <div class="bg-konsaru2">
+          <img src="./assets/rightside/bgkonsaru2.png" alt="bgkonsaru2" />
+        </div>
+        <div class="bg-yuka"></div>
+        <div class="bg-riyu">
+          <img src="./assets/rightside/bgriyu.png" alt="bgriyu" />
+        </div>
+        <div class="bg-yokuaru"></div>
+        <div class="footer">
+          <p>Copyright ©　　　 All Rights Reserved.</p>
+        </div>
+      </div>
     </div>
-    <div class="container">
-      <section class="tabs">
-        <input
-          id="tab-1"
-          type="radio"
-          name="radio-set"
-          class="tab-selector-1"
-          checked="checked"
-        />
-        <label for="tab-1" class="tab-label-1"
-          >マンツーマン <br />
-          コンサル</label
-        >
+    <div class="tabs">
+      <input
+        id="all"
+        type="radio"
+        checked
+        name="tab_item"
+        onclick="toggleTabs('left')"
+      />
+      <label class="tab_item left" id="tab_itemLeft" for="all"
+        >マンツーマン <br />コンサル</label
+      >
+      <input
+        id="programming"
+        type="radio"
+        name="tab_item"
+        onclick="toggleTabs('right')"
+      />
+      <label class="tab_item right" for="programming"
+        >有料 <br />コンテンツ</label
+      >
 
-        <input
-          id="tab-2"
-          type="radio"
-          name="radio-set"
-          class="tab-selector-2"
-        />
-        <label for="tab-2" class="tab-label-2"
-          >有料 <br />
-          コンテンツ</label
-        >
-
-        <div class="clear-shadow"></div>
-
-        <div class="content">
-          <div class="content-1">
-            <img src="./assets/kanzen.jpg" alt="kanzen" />
+      <div class="tab_content" id="all_content">
+        <div class="kanzen">
+          <img src="./assets/leftside/kanzen.jpg" alt="kanzen" />
+        </div>
+        <div class="sangatsu">
+          <img class="month3" src="./assets/leftside/3month.png" alt="3month" />
+          <img
+            onclick="openFormRegister()"
+            class="button"
+            src="./assets/leftside/button.png"
+            alt="button"
+          />
+        </div>
+        <div class="no1">
+          <img src="./assets/leftside/no1nobg.png" alt="no1nobg" />
+        </div>
+        <div class="yottsu">
+          <img class="yottsu-pc" src="./assets/leftside/4tsunobg.png" alt="yottsu" />
+          <img class="yottsu-mb" src="./assets/leftside/4tsu.png" alt="yottsu" />
+        </div>
+        <div class="warning">
+          <img class="warning-pc" src="./assets/leftside/warningnobg.png" alt="warningnobg" />
+          <img class="warning-mb" src="./assets/leftside/warning.png" alt="warning" />
+        </div>
+        <div class="nayami">
+          <img src="./assets/leftside/nayami.png" alt="nayami" />
+        </div>
+        <div class="konsaru">
+          <img src="./assets/leftside/konsarupc.png" alt="konsaru" />
+        </div>
+        <div class="konsaru2">
+          <img class="konsaru2-pc" src="./assets/leftside/konsaru2nobg.png" alt="konsaru2-pc" />
+          <img class="konsaru2-mb" src="./assets/leftside/konsaru2mb.png" alt="konsaru2-mb" />
+        </div>
+        <div class="tasya-container">
+          <div class="sangatsu">
+            <img
+              class="month3"
+              src="./assets/leftside/3month.png"
+              alt="3month"
+            />
+            <img
+              class="button"
+              src="./assets/leftside/button.png"
+              alt="button"
+            />
           </div>
-          <div class="content-2">
-            <h2>有料 コンテンツ</h2>
-            <p>
-              Do you see any Teletubbies in here? Do you see a slender plastic
-              tag clipped to my shirt with my name printed on it? Do you see a
-              little Asian child with a blank expression on his face sitting
-              outside on a mechanical helicopter that shakes when you put
-              quarters in it? No? Well, that's what you see at a toy store. And
-              you must think you're in a toy store, because you're here shopping
-              for an infant named Jeb.
-            </p>
-            <h3>Excellence</h3>
-            <p>
-              Like you, I used to think the world was this great place where
-              everybody lived by the same standards I did, then some kid with a
-              nail showed me I was living in his world, a world where chaos
-              rules not order, a world where righteousness is not rewarded.
-              That's Cesar's world, and if you're not willing to play by his
-              rules, then you're gonna have to pay the price.
-            </p>
+          <img class="tasya" src="./assets/leftside/tasya.png" alt="tasya" />
+        </div>
+        <div class="nagare">
+          <img src="./assets/leftside/nagare.png" alt="konsaru" />
+        </div>
+        <div class="yuuryou">
+          <img src="./assets/leftside/yuuryou.png" alt="yuuryou" />
+        </div>
+        <div class="ng">
+          <img class="ng-pc" src="./assets/leftside/ngnobg.png" alt="ng" />
+          <img class="ng-mb" src="./assets/leftside/ngmb.png" alt="ngmb" />
+        </div>
+        <div class="yokuaru-container">
+          <img src="./assets/leftside/yokuaru.png" alt="yokuaru" />
+          <div class="sangatsu">
+            <img
+              class="month3"
+              src="./assets/leftside/3month.png"
+              alt="3month"
+            />
+            <img
+              class="button"
+              src="./assets/leftside/button.png"
+              alt="button"
+            />
+          </div>
+          <div class="footer-mb">
+            <p>Copyright ©　　　 All Rights Reserved.</p>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="tab_content tabRight" id="programming_content">
+        <div class="tabRight-kanzen">
+          <img src="./assets/rightside/kanzen.png" alt="kanzen" />
+        </div>
+        <div class="tabRight-sangatsu">
+          <img
+            class="month3"
+            src="./assets/rightside/threemonth.png"
+            alt="3month"
+          />
+          <img
+            onclick="openFormRegister()"
+            class="button"
+            src="./assets/leftside/button.png"
+            alt="button"
+          />
+        </div>
+        <div class="tabRight-warning">
+          <img src="./assets/rightside/warning.png" alt="warning" />
+        </div>
+        <div class="tabRight-tasya">
+          <img src="./assets/rightside/tasya.png" alt="tasya" />
+        </div>
+        <div class="tabRight-konsaru">
+          <img src="./assets/rightside/konsaru.png" alt="konsaru" />
+        </div>
+        <div class="tabRight-konsaru2">
+          <img src="./assets/rightside/konsaru2.png" alt="konsaru2" />
+        </div>
+        <div class="tabRight-yuryou">
+          <div class="tabRight-sangatsu">
+            <img
+              class="month3"
+              src="./assets/rightside/threemonth.png"
+              alt="3month"
+            />
+            <img
+              onclick="openFormRegister()"
+              class="button"
+              src="./assets/leftside/button.png"
+              alt="button"
+            />
+          </div>
+          <img
+            class="yuryou"
+            src="./assets/rightside/yuryou.png"
+            alt="yuryou"
+          />
+        </div>
+        <div class="tabRight-riyu">
+          <img class="riyu" src="./assets/rightside/riyu.png" alt="riyu" />
+        </div>
+        <div class="tabRight-yokuaru">
+          <img
+            class="yokuaru"
+            src="./assets/rightside/yokuaru.png"
+            alt="yokuaru"
+          />
+          <div class="tabRight-sangatsu">
+            <img
+              class="month3"
+              src="./assets/rightside/threemonth.png"
+              alt="3month"
+            />
+            <img
+              onclick="openFormRegister()"
+              class="button"
+              src="./assets/leftside/button.png"
+              alt="button"
+            />
+          </div>
+        </div>
+      </div>
     </div>
+    <script>
+      function openFormRegister() {
+        window.open("https://ws.formzu.net/fgen/S45721389/");
+      }
+      function toggleTabs(side) {
+        var bgLeftSide = document.getElementById("leftSideBg");
+        var bgRightSide = document.getElementById("rightSideBg");
+        var tabItemLeft = document.getElementById("tab_itemLeft");
+        if (side === "left") {
+          bgLeftSide.style.display = "block";
+          bgRightSide.style.display = "none";
+          tabItemLeft.style.borderBottom = "8px solid #2e46d6";
+        } else {
+          bgLeftSide.style.display = "none";
+          bgRightSide.style.display = "block";
+          tabItemLeft.style.borderBottom = "8px solid #F03039";
+        }
+      }
+    </script>
   </body>
 </html>

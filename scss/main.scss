@@ -1,166 +1,571 @@
-// * {
-//   font-family: "Noto Sans JP", sans-serif;
-//   margin: 0;
-//   padding: 0;
-//   border: 0;
-//   box-sizing: border-box;
-// }
 body {
   font-family: "Noto Sans JP", sans-serif;
   margin: 0;
+  position: relative;
 }
 .background {
-  width: 100%;
-  position: relative;
   z-index: 1;
-  .bg-header {
-    height: 130px;
-    background: #fff;
-  }
-  .bg-kanzen {
-    height: 805px;
-    background: #f4f4f4;
-  }
-}
-
-.container {
   position: absolute;
-  inset: 0;
-  z-index: 2;
-  width: 1220px;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-}
-.tabs {
-  position: relative;
-  margin: 0 auto;
-  width: 750px;
-}
-
-.tabs input {
-  position: absolute;
-  z-index: 1000;
-  width: 375px;
-  height: 100px;
-  left: 0px;
-  top: 30px;
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  cursor: pointer;
-}
-.tabs input#tab-2 {
-  left: 375px;
-}
-
-.tabs label {
-  top: 20px;
-  background: #d3d3d3;
-  padding-top: 10px;
-  font-size: 36px;
-  line-height: 50px;
-  height: 100px;
-  position: relative;
-  float: left;
-  display: block;
-  width: 375px;
-  color: #fff;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-weight: 500;
-  text-align: center;
-  border-radius: 20px 20px 0 0;
-}
-.tabs label:after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
   width: 100%;
-  height: 2px;
-  display: block;
+  top: 140px;
+  .background-leftside {
+    .bg-kanzen {
+      height: 805px;
+      background: #f4f4f4;
+    }
+    .bg-sangatsu {
+      height: 950px;
+    }
+    .bg-no1 {
+      height: 1644px;
+      img {
+        width: 100%;
+        height: 1644px;
+      }
+    }
+    .bg-4tsu {
+      height: 1249px;
+      img {
+        width: 100%;
+        height: 1249px;
+      }
+    }
+    .bg-ng {
+      height: 995px;
+      img {
+        width: 100%;
+        height: 995px;
+      }
+    }
+    .bg-nayami {
+      height: 1272px;
+    }
+    .bg-kosarubg {
+      height: 1015px;
+      img {
+        width: 100%;
+        height: 1015px;
+      }
+    }
+    .bg-4tsu2 {
+      height: 1401px;
+      img {
+        width: 100%;
+        height: 1401px;
+      }
+    }
+    .bg-tasya {
+      height: 2638px;
+    }
+    .bg-no1-2 {
+      height: 3414px;
+      img {
+        width: 100%;
+        height: inherit;
+      }
+    }
+    .bg-yuryo {
+      height: 2034px;
+    }
+    .bg-kosarubg2 {
+      height: 1742px;
+      img {
+        width: 100%;
+        height: inherit;
+      }
+    }
+    .bg-yokuaru {
+      height: 3820px;
+    }
+    .footer {
+      height: 80px;
+      background: #002882;
+      text-align: center;
+      p {
+        padding-top: 25px;
+        color: white;
+      }
+    }
+  }
+  .background-rightside {
+    display: none;
+    .bg-kanzen {
+      height: 803px;
+      background: #f4f4f4;
+    }
+    .bg-threemonth {
+      height: 1080px;
+    }
+    .bg-warning {
+      height: 887px;
+      img {
+        width: 100%;
+        height: inherit;
+      }
+    }
+    .bg-tasya {
+      height: 1910px;
+    }
+    .bg-konsaru {
+      height: 1057px;
+      background: #fffee8;
+    }
+    .bg-konsaru2 {
+      height: 1982px;
+      img {
+        width: 100%;
+        height: inherit;
+      }
+    }
+    .bg-yuka {
+      height: 3080px;
+    }
+    .bg-riyu {
+      height: 1828px;
+      img {
+        width: 100%;
+        height: inherit;
+      }
+    }
+    .bg-yokuaru {
+      height: 3675px;
+    }
+    .footer {
+      height: 80px;
+      background: #002882;
+      text-align: center;
+      p {
+        padding-top: 25px;
+        color: white;
+      }
+    }
+  }
 }
-
-// .tabs input:hover + label {
-//   background: #5ba4a4;
-// }
-
-.tabs label:first-of-type {
-  z-index: 14;
-  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);
-}
-
-.tab-label-2 {
-  z-index: 13;
-}
-
-.tabs input:checked + label {
-  // transition: all 0.01s;
-  background: #2e46d6;
-  z-index: 16;
-  top: 0 !important;
-  height: 120px !important;
-  padding-top: 10px !important;
-}
-
-.clear-shadow {
-  clear: both;
-}
-
-.content {
-  border-top: 8px solid #2e46d6;
-  // background: #fff;
-  position: relative;
+/*タブ切り替え全体のスタイル*/
+.tabs {
+  z-index: 10;
+  margin-top: 50px;
+  background-color: #fff;
   width: 750px;
-  height: auto;
-  z-index: 15;
-  box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.1);
-  border-radius: 0 3px 3px 3px;
-  .content-1{
-    width: 100%;
-    height: auto;
+  margin: 0 auto;
+  position: relative;
+  /*タブのスタイル*/
+  .tab_item {
+    z-index: 5;
+    margin-top: 20px;
+    padding-top: 10px;
+    width: calc(100% / 2);
+    height: 100px;
+    background-color: #d3d3d3;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    float: left;
+    border-radius: 20px 20px 0 0;
+    transition: all 0.2s ease;
+    font-size: 36px;
+    font-weight: 500;
+    border-bottom: 8px solid #2e46d6;
+  }
+  .tab_item:hover {
+    opacity: 0.85;
+  }
+  /*タブ切り替えの中身のスタイル*/
+  .tab_content {
+    display: none;
+    clear: both;
+    overflow: hidden;
+    .kanzen {
+      img {
+        width: 100%;
+      }
+    }
+    .sangatsu {
+      height: 947px;
+      width: 100%;
+      position: relative;
+      .month3 {
+        width: inherit;
+        margin-top: 80px;
+        position: absolute;
+      }
+      .button {
+        top: 47%;
+        left: 7%;
+        position: absolute;
+      }
+      .button:hover {
+        cursor: pointer;
+      }
+    }
+    .no1 {
+      position: absolute;
+      height: 1484px;
+      top: 104%;
+      img {
+        width: 100%;
+      }
+    }
+    .yottsu {
+      position: absolute;
+      height: 1090px;
+      top: 191%;
+      .yottsu-pc {
+        width: 100%;
+      }
+      .yottsu-mb {
+        display: none;
+        width: 100%;
+      }
+    }
+    .warning {
+      position: absolute;
+      height: 835px;
+      top: 257%;
+      .warning-pc {
+        width: 100%;
+      }
+      .warning-mb {
+        display: none;
+        width: 100%;
+      }
+    }
+    .nayami {
+      position: absolute;
+      height: 1112px;
+      top: 309%;
+      img {
+        width: 100%;
+      }
+    }
+    .konsaru {
+      position: absolute;
+      height: 925px;
+      top: 376%;
+      img {
+        width: 100%;
+      }
+    }
+    .konsaru2 {
+      position: absolute;
+      height: 925px;
+      top: 430%;
+      .konsaru2-pc {
+        width: 100%;
+      }
+      .konsaru2-mb {
+        display: none;
+        width: 100%;
+      }
+    }
+    .tasya-container {
+      position: absolute;
+      width: 750px;
+      top: 500%;
+    }
+    .nagare {
+      position: absolute;
+      top: 643%;
+      img {
+        width: 100%;
+      }
+    }
+    .yuuryou {
+      position: absolute;
+      top: 822%;
+      left: 8%;
+      img {
+        width: 100%;
+      }
+    }
+    .ng {
+      position: absolute;
+      top: 930%;
+      .ng-pc {
+        width: 100%;
+      }
+      .ng-mb {
+        display: none;
+        width: 100%;
+      }
+    }
+    .yokuaru-container {
+      position: absolute;
+      width: 750px;
+      top: 1021%;
+      .footer-mb {
+        display: none;
+        height: 80px;
+        background: #002882;
+        text-align: center;
+        p {
+          padding-top: 25px;
+          color: white;
+        }
+      }
+    }
+  }
+  .tab_content.tabRight {
+    .tabRight-kanzen {
+      img {
+        width: 100%;
+      }
+    }
+    .tabRight-sangatsu {
+      position: relative;
+      height: 1037px;
+      .month3 {
+        width: 100%;
+        margin-top: 70px;
+        position: absolute;
+      }
+      .button {
+        top: 53%;
+        left: 7%;
+        position: absolute;
+      }
+      .button:hover {
+        cursor: pointer;
+      }
+    }
+    .tabRight-warning {
+      position: absolute;
+      top: 106%;
+      img {
+        width: 100%;
+      }
+    }
+    .tabRight-tasya {
+      position: absolute;
+      top: 151%;
+      img {
+        width: 100%;
+      }
+    }
+    .tabRight-konsaru {
+      position: absolute;
+      top: 247%;
+      img {
+        width: 100%;
+      }
+    }
+    .tabRight-konsaru2 {
+      position: absolute;
+      top: 300%;
+      img {
+        width: 100%;
+      }
+    }
+    .tabRight-yuryou {
+      position: absolute;
+      width: 750px;
+      top: 396%;
+      .yuryou {
+        margin-top: 95px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .tabRight-riyu {
+      position: absolute;
+      top: 555%;
+      img {
+        width: 100%;
+      }
+    }
+    .tabRight-yokuaru {
+      position: absolute;
+      top: 645%;
+      .yokuaru {
+        margin-bottom: 20px;
+      }
+      img {
+        width: 100%;
+      }
+    }
   }
 }
 
-.content div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 11;
-  opacity: 0;
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+  display: none;
+}
 
-  -webkit-transition: opacity linear 0.1s;
-  -moz-transition: opacity linear 0.1s;
-  -o-transition: opacity linear 0.1s;
-  -ms-transition: opacity linear 0.1s;
-  transition: opacity linear 0.1s;
+/*選択されているタブのコンテンツのみを表示*/
+#all:checked ~ #all_content,
+#programming:checked ~ #programming_content,
+#design:checked ~ #design_content {
+  display: block;
+  z-index: 5;
 }
-.tabs input.tab-selector-1:checked ~ .content .content-1,
-.tabs input.tab-selector-2:checked ~ .content .content-2 {
-  z-index: 100;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=100);
-  opacity: 1;
 
-  -webkit-transition: opacity ease-out 0.2s 0.1s;
-  -moz-transition: opacity ease-out 0.2s 0.1s;
-  -o-transition: opacity ease-out 0.2s 0.1s;
-  -ms-transition: opacity ease-out 0.2s 0.1s;
-  transition: opacity ease-out 0.2s 0.1s;
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item.left {
+  background-color: #2e46d6;
+  color: #fff;
+  height: 120px;
+  margin-top: 0px;
+  border-bottom: 8px solid #2e46d6;
 }
-.content div h2,
-.content div h3 {
-  color: #398080;
+.tabs input:checked + .tab_item.right {
+  background-color: #f03039;
+  border-bottom: 8px solid #f03039;
+  color: #fff;
+  height: 120px;
+  margin-top: 0px;
 }
-.content div p {
-  font-size: 14px;
-  line-height: 22px;
-  font-style: italic;
-  text-align: left;
-  margin: 0;
-  color: #777;
-  padding-left: 15px;
-  font-family: Cambria, Georgia, serif;
-  border-left: 8px solid rgba(63, 148, 148, 0.1);
+@media only screen and (max-width: 415px) {
+  .background {
+    display: none !important;
+  }
+  .tabs {
+    width: 412px !important;
+    .tab_item {
+      font-size: 25px;
+      line-height: 35px;
+      height: 80px;
+    }
+    input:checked + .tab_item.left {
+      height: 100px !important;
+    }
+    input:checked + .tab_item.right {
+      height: 100px !important;
+    }
+    .tab_content {
+      .sangatsu {
+        height: 530px;
+        .button {
+          width: 80%;
+          top: 52%;
+          left: 10%;
+        }
+      }
+      .yottsu {
+        top: 183%;
+        .yottsu-pc {
+          display: none;
+        }
+        .yottsu-mb {
+          display: block;
+        }
+      }
+      .warning {
+        top: 248%;
+        .warning-pc{
+          display: none;
+        }
+        .warning-mb{
+          display: block;
+        }
+      }
+      .tasya-container {
+        width: 414px;
+        .sangatsu {
+          .button {
+            width: 80%;
+          }
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .yuuryou {
+        left: 0;
+      }
+      .nayami {
+        top: 302%;
+      }
+      .konsaru {
+        top: 362%;
+      }
+      .konsaru2 {
+        top: 408%;
+        .konsaru2-pc{
+          display: none;
+        }
+        .konsaru2-mb{
+          display: block;
+        }
+      }
+      .tasya-container {
+        top: 467%;
+        .tasya {
+          margin-top: 25px;
+        }
+      }
+      .nagare {
+        top: 603%;
+      }
+      .yuuryou {
+        top: 763%;
+      }
+      .ng {
+        top: 867%;
+        .ng-pc {
+          display: none;
+        }
+        .ng-mb {
+          display: block;
+        }
+      }
+      .yokuaru-container {
+        top: 957%;
+        width: 414px;
+        .sangatsu {
+          .month3 {
+            margin-top: 63px;
+          }
+          .button {
+            width: 80%;
+          }
+        }
+        img {
+          width: 100%;
+        }
+        .footer-mb {
+          display: block;
+        }
+      }
+    }
+    .tab_content.tabRight {
+      .tabRight-sangatsu {
+        .button {
+          width: 80%;
+          top: 58%;
+          left: 10%;
+        }
+      }
+      .tabRight-sangatsu {
+        height: 580px;
+      }
+      .tabRight-yuryou {
+        width: 414px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 376px) {
+  .background {
+    .background-leftside {
+      display: none;
+    }
+  }
+  .tabs {
+    width: 375px !important;
+    .tab_item {
+      font-size: 25px;
+      line-height: 35px;
+      height: 80px;
+    }
+    .tab_content{
+      .tasya-container{
+        width: 374px;
+      }
+      .yokuaru-container{
+        width: 374px;
+      }
+    }
+  }
 }

@@ -1,162 +1,649 @@
+@charset "UTF-8";
 body {
   font-family: "Noto Sans JP", sans-serif;
   margin: 0;
+  position: relative;
 }
 
 .background {
-  width: 100%;
-  position: relative;
   z-index: 1;
+  position: absolute;
+  width: 100%;
+  top: 140px;
 }
 
-.background .bg-header {
-  height: 130px;
-  background: #fff;
-}
-
-.background .bg-kanzen {
+.background .background-leftside .bg-kanzen {
   height: 805px;
   background: #f4f4f4;
 }
 
-.container {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  width: 1220px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto;
+.background .background-leftside .bg-sangatsu {
+  height: 950px;
 }
 
+.background .background-leftside .bg-no1 {
+  height: 1644px;
+}
+
+.background .background-leftside .bg-no1 img {
+  width: 100%;
+  height: 1644px;
+}
+
+.background .background-leftside .bg-4tsu {
+  height: 1249px;
+}
+
+.background .background-leftside .bg-4tsu img {
+  width: 100%;
+  height: 1249px;
+}
+
+.background .background-leftside .bg-ng {
+  height: 995px;
+}
+
+.background .background-leftside .bg-ng img {
+  width: 100%;
+  height: 995px;
+}
+
+.background .background-leftside .bg-nayami {
+  height: 1272px;
+}
+
+.background .background-leftside .bg-kosarubg {
+  height: 1015px;
+}
+
+.background .background-leftside .bg-kosarubg img {
+  width: 100%;
+  height: 1015px;
+}
+
+.background .background-leftside .bg-4tsu2 {
+  height: 1401px;
+}
+
+.background .background-leftside .bg-4tsu2 img {
+  width: 100%;
+  height: 1401px;
+}
+
+.background .background-leftside .bg-tasya {
+  height: 2638px;
+}
+
+.background .background-leftside .bg-no1-2 {
+  height: 3414px;
+}
+
+.background .background-leftside .bg-no1-2 img {
+  width: 100%;
+  height: inherit;
+}
+
+.background .background-leftside .bg-yuryo {
+  height: 2034px;
+}
+
+.background .background-leftside .bg-kosarubg2 {
+  height: 1742px;
+}
+
+.background .background-leftside .bg-kosarubg2 img {
+  width: 100%;
+  height: inherit;
+}
+
+.background .background-leftside .bg-yokuaru {
+  height: 3820px;
+}
+
+.background .background-leftside .footer {
+  height: 80px;
+  background: #002882;
+  text-align: center;
+}
+
+.background .background-leftside .footer p {
+  padding-top: 25px;
+  color: white;
+}
+
+.background .background-rightside {
+  display: none;
+}
+
+.background .background-rightside .bg-kanzen {
+  height: 803px;
+  background: #f4f4f4;
+}
+
+.background .background-rightside .bg-threemonth {
+  height: 1080px;
+}
+
+.background .background-rightside .bg-warning {
+  height: 887px;
+}
+
+.background .background-rightside .bg-warning img {
+  width: 100%;
+  height: inherit;
+}
+
+.background .background-rightside .bg-tasya {
+  height: 1910px;
+}
+
+.background .background-rightside .bg-konsaru {
+  height: 1057px;
+  background: #fffee8;
+}
+
+.background .background-rightside .bg-konsaru2 {
+  height: 1982px;
+}
+
+.background .background-rightside .bg-konsaru2 img {
+  width: 100%;
+  height: inherit;
+}
+
+.background .background-rightside .bg-yuka {
+  height: 3080px;
+}
+
+.background .background-rightside .bg-riyu {
+  height: 1828px;
+}
+
+.background .background-rightside .bg-riyu img {
+  width: 100%;
+  height: inherit;
+}
+
+.background .background-rightside .bg-yokuaru {
+  height: 3675px;
+}
+
+.background .background-rightside .footer {
+  height: 80px;
+  background: #002882;
+  text-align: center;
+}
+
+.background .background-rightside .footer p {
+  padding-top: 25px;
+  color: white;
+}
+
+/*タブ切り替え全体のスタイル*/
 .tabs {
-  position: relative;
-  margin: 0 auto;
+  z-index: 10;
+  margin-top: 50px;
+  background-color: #fff;
   width: 750px;
+  margin: 0 auto;
+  position: relative;
+  /*タブのスタイル*/
+  /*タブ切り替えの中身のスタイル*/
 }
 
-.tabs input {
-  position: absolute;
-  z-index: 1000;
-  width: 375px;
+.tabs .tab_item {
+  z-index: 5;
+  margin-top: 20px;
+  padding-top: 10px;
+  width: calc(100% / 2);
   height: 100px;
-  left: 0px;
-  top: 30px;
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
+  background-color: #d3d3d3;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  display: block;
+  float: left;
+  border-radius: 20px 20px 0 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-size: 36px;
+  font-weight: 500;
+  border-bottom: 8px solid #2e46d6;
+}
+
+.tabs .tab_item:hover {
+  opacity: 0.85;
+}
+
+.tabs .tab_content {
+  display: none;
+  clear: both;
+  overflow: hidden;
+}
+
+.tabs .tab_content .kanzen img {
+  width: 100%;
+}
+
+.tabs .tab_content .sangatsu {
+  height: 947px;
+  width: 100%;
+  position: relative;
+}
+
+.tabs .tab_content .sangatsu .month3 {
+  width: inherit;
+  margin-top: 80px;
+  position: absolute;
+}
+
+.tabs .tab_content .sangatsu .button {
+  top: 47%;
+  left: 7%;
+  position: absolute;
+}
+
+.tabs .tab_content .sangatsu .button:hover {
   cursor: pointer;
 }
 
-.tabs input#tab-2 {
-  left: 375px;
-}
-
-.tabs label {
-  top: 20px;
-  background: #d3d3d3;
-  padding-top: 10px;
-  font-size: 36px;
-  line-height: 50px;
-  height: 100px;
-  position: relative;
-  float: left;
-  display: block;
-  width: 375px;
-  color: #fff;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-weight: 500;
-  text-align: center;
-  border-radius: 20px 20px 0 0;
-}
-
-.tabs label:after {
-  content: "";
+.tabs .tab_content .no1 {
   position: absolute;
-  bottom: -2px;
-  left: 0;
+  height: 1484px;
+  top: 104%;
+}
+
+.tabs .tab_content .no1 img {
   width: 100%;
-  height: 2px;
-  display: block;
 }
 
-.tabs label:first-of-type {
-  z-index: 14;
-  -webkit-box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);
-          box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);
+.tabs .tab_content .yottsu {
+  position: absolute;
+  height: 1090px;
+  top: 191%;
 }
 
-.tab-label-2 {
-  z-index: 13;
+.tabs .tab_content .yottsu .yottsu-pc {
+  width: 100%;
 }
 
-.tabs input:checked + label {
-  background: #2e46d6;
-  z-index: 16;
-  top: 0 !important;
-  height: 120px !important;
-  padding-top: 10px !important;
+.tabs .tab_content .yottsu .yottsu-mb {
+  display: none;
+  width: 100%;
 }
 
-.clear-shadow {
-  clear: both;
+.tabs .tab_content .warning {
+  position: absolute;
+  height: 835px;
+  top: 257%;
 }
 
-.content {
-  border-top: 8px solid #2e46d6;
-  position: relative;
+.tabs .tab_content .warning .warning-pc {
+  width: 100%;
+}
+
+.tabs .tab_content .warning .warning-mb {
+  display: none;
+  width: 100%;
+}
+
+.tabs .tab_content .nayami {
+  position: absolute;
+  height: 1112px;
+  top: 309%;
+}
+
+.tabs .tab_content .nayami img {
+  width: 100%;
+}
+
+.tabs .tab_content .konsaru {
+  position: absolute;
+  height: 925px;
+  top: 376%;
+}
+
+.tabs .tab_content .konsaru img {
+  width: 100%;
+}
+
+.tabs .tab_content .konsaru2 {
+  position: absolute;
+  height: 925px;
+  top: 430%;
+}
+
+.tabs .tab_content .konsaru2 .konsaru2-pc {
+  width: 100%;
+}
+
+.tabs .tab_content .konsaru2 .konsaru2-mb {
+  display: none;
+  width: 100%;
+}
+
+.tabs .tab_content .tasya-container {
+  position: absolute;
   width: 750px;
-  height: auto;
-  z-index: 15;
-  -webkit-box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.1);
-  border-radius: 0 3px 3px 3px;
+  top: 500%;
 }
 
-.content .content-1 {
-  width: 100%;
-  height: auto;
-}
-
-.content div {
+.tabs .tab_content .nagare {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 11;
-  opacity: 0;
-  -webkit-transition: opacity linear 0.1s;
-  transition: opacity linear 0.1s;
+  top: 643%;
 }
 
-.tabs input.tab-selector-1:checked ~ .content .content-1,
-.tabs input.tab-selector-2:checked ~ .content .content-2 {
-  z-index: 100;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  filter: alpha(opacity=100);
-  opacity: 1;
-  -webkit-transition: opacity ease-out 0.2s 0.1s;
-  transition: opacity ease-out 0.2s 0.1s;
+.tabs .tab_content .nagare img {
+  width: 100%;
 }
 
-.content div h2,
-.content div h3 {
-  color: #398080;
+.tabs .tab_content .yuuryou {
+  position: absolute;
+  top: 822%;
+  left: 8%;
 }
 
-.content div p {
-  font-size: 14px;
-  line-height: 22px;
-  font-style: italic;
-  text-align: left;
-  margin: 0;
-  color: #777;
-  padding-left: 15px;
-  font-family: Cambria, Georgia, serif;
-  border-left: 8px solid rgba(63, 148, 148, 0.1);
+.tabs .tab_content .yuuryou img {
+  width: 100%;
+}
+
+.tabs .tab_content .ng {
+  position: absolute;
+  top: 930%;
+}
+
+.tabs .tab_content .ng .ng-pc {
+  width: 100%;
+}
+
+.tabs .tab_content .ng .ng-mb {
+  display: none;
+  width: 100%;
+}
+
+.tabs .tab_content .yokuaru-container {
+  position: absolute;
+  width: 750px;
+  top: 1021%;
+}
+
+.tabs .tab_content .yokuaru-container .footer-mb {
+  display: none;
+  height: 80px;
+  background: #002882;
+  text-align: center;
+}
+
+.tabs .tab_content .yokuaru-container .footer-mb p {
+  padding-top: 25px;
+  color: white;
+}
+
+.tabs .tab_content.tabRight .tabRight-kanzen img {
+  width: 100%;
+}
+
+.tabs .tab_content.tabRight .tabRight-sangatsu {
+  position: relative;
+  height: 1037px;
+}
+
+.tabs .tab_content.tabRight .tabRight-sangatsu .month3 {
+  width: 100%;
+  margin-top: 70px;
+  position: absolute;
+}
+
+.tabs .tab_content.tabRight .tabRight-sangatsu .button {
+  top: 53%;
+  left: 7%;
+  position: absolute;
+}
+
+.tabs .tab_content.tabRight .tabRight-sangatsu .button:hover {
+  cursor: pointer;
+}
+
+.tabs .tab_content.tabRight .tabRight-warning {
+  position: absolute;
+  top: 106%;
+}
+
+.tabs .tab_content.tabRight .tabRight-warning img {
+  width: 100%;
+}
+
+.tabs .tab_content.tabRight .tabRight-tasya {
+  position: absolute;
+  top: 151%;
+}
+
+.tabs .tab_content.tabRight .tabRight-tasya img {
+  width: 100%;
+}
+
+.tabs .tab_content.tabRight .tabRight-konsaru {
+  position: absolute;
+  top: 247%;
+}
+
+.tabs .tab_content.tabRight .tabRight-konsaru img {
+  width: 100%;
+}
+
+.tabs .tab_content.tabRight .tabRight-konsaru2 {
+  position: absolute;
+  top: 300%;
+}
+
+.tabs .tab_content.tabRight .tabRight-konsaru2 img {
+  width: 100%;
+}
+
+.tabs .tab_content.tabRight .tabRight-yuryou {
+  position: absolute;
+  width: 750px;
+  top: 396%;
+}
+
+.tabs .tab_content.tabRight .tabRight-yuryou .yuryou {
+  margin-top: 95px;
+}
+
+.tabs .tab_content.tabRight .tabRight-yuryou img {
+  width: 100%;
+}
+
+.tabs .tab_content.tabRight .tabRight-riyu {
+  position: absolute;
+  top: 555%;
+}
+
+.tabs .tab_content.tabRight .tabRight-riyu img {
+  width: 100%;
+}
+
+.tabs .tab_content.tabRight .tabRight-yokuaru {
+  position: absolute;
+  top: 645%;
+}
+
+.tabs .tab_content.tabRight .tabRight-yokuaru .yokuaru {
+  margin-bottom: 20px;
+}
+
+.tabs .tab_content.tabRight .tabRight-yokuaru img {
+  width: 100%;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+  display: none;
+}
+
+/*選択されているタブのコンテンツのみを表示*/
+#all:checked ~ #all_content,
+#programming:checked ~ #programming_content,
+#design:checked ~ #design_content {
+  display: block;
+  z-index: 5;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item.left {
+  background-color: #2e46d6;
+  color: #fff;
+  height: 120px;
+  margin-top: 0px;
+  border-bottom: 8px solid #2e46d6;
+}
+
+.tabs input:checked + .tab_item.right {
+  background-color: #f03039;
+  border-bottom: 8px solid #f03039;
+  color: #fff;
+  height: 120px;
+  margin-top: 0px;
+}
+
+@media only screen and (max-width: 415px) {
+  .background {
+    display: none !important;
+  }
+  .tabs {
+    width: 412px !important;
+  }
+  .tabs .tab_item {
+    font-size: 25px;
+    line-height: 35px;
+    height: 80px;
+  }
+  .tabs input:checked + .tab_item.left {
+    height: 100px !important;
+  }
+  .tabs input:checked + .tab_item.right {
+    height: 100px !important;
+  }
+  .tabs .tab_content .sangatsu {
+    height: 530px;
+  }
+  .tabs .tab_content .sangatsu .button {
+    width: 80%;
+    top: 52%;
+    left: 10%;
+  }
+  .tabs .tab_content .yottsu {
+    top: 183%;
+  }
+  .tabs .tab_content .yottsu .yottsu-pc {
+    display: none;
+  }
+  .tabs .tab_content .yottsu .yottsu-mb {
+    display: block;
+  }
+  .tabs .tab_content .warning {
+    top: 248%;
+  }
+  .tabs .tab_content .warning .warning-pc {
+    display: none;
+  }
+  .tabs .tab_content .warning .warning-mb {
+    display: block;
+  }
+  .tabs .tab_content .tasya-container {
+    width: 414px;
+  }
+  .tabs .tab_content .tasya-container .sangatsu .button {
+    width: 80%;
+  }
+  .tabs .tab_content .tasya-container img {
+    width: 100%;
+  }
+  .tabs .tab_content .yuuryou {
+    left: 0;
+  }
+  .tabs .tab_content .nayami {
+    top: 302%;
+  }
+  .tabs .tab_content .konsaru {
+    top: 362%;
+  }
+  .tabs .tab_content .konsaru2 {
+    top: 408%;
+  }
+  .tabs .tab_content .konsaru2 .konsaru2-pc {
+    display: none;
+  }
+  .tabs .tab_content .konsaru2 .konsaru2-mb {
+    display: block;
+  }
+  .tabs .tab_content .tasya-container {
+    top: 467%;
+  }
+  .tabs .tab_content .tasya-container .tasya {
+    margin-top: 25px;
+  }
+  .tabs .tab_content .nagare {
+    top: 603%;
+  }
+  .tabs .tab_content .yuuryou {
+    top: 763%;
+  }
+  .tabs .tab_content .ng {
+    top: 867%;
+  }
+  .tabs .tab_content .ng .ng-pc {
+    display: none;
+  }
+  .tabs .tab_content .ng .ng-mb {
+    display: block;
+  }
+  .tabs .tab_content .yokuaru-container {
+    top: 957%;
+    width: 414px;
+  }
+  .tabs .tab_content .yokuaru-container .sangatsu .month3 {
+    margin-top: 63px;
+  }
+  .tabs .tab_content .yokuaru-container .sangatsu .button {
+    width: 80%;
+  }
+  .tabs .tab_content .yokuaru-container img {
+    width: 100%;
+  }
+  .tabs .tab_content .yokuaru-container .footer-mb {
+    display: block;
+  }
+  .tabs .tab_content.tabRight .tabRight-sangatsu .button {
+    width: 80%;
+    top: 58%;
+    left: 10%;
+  }
+  .tabs .tab_content.tabRight .tabRight-sangatsu {
+    height: 580px;
+  }
+  .tabs .tab_content.tabRight .tabRight-yuryou {
+    width: 414px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .background .background-leftside {
+    display: none;
+  }
+  .tabs {
+    width: 375px !important;
+  }
+  .tabs .tab_item {
+    font-size: 25px;
+    line-height: 35px;
+    height: 80px;
+  }
+  .tabs .tab_content .tasya-container {
+    width: 374px;
+  }
+  .tabs .tab_content .yokuaru-container {
+    width: 374px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
