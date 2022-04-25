@@ -13,7 +13,7 @@ body {
 }
 
 .background .background-leftside .bg-kanzen {
-  height: 805px;
+  height: 803px;
   background: #f4f4f4;
 }
 
@@ -75,7 +75,7 @@ body {
 }
 
 .background .background-leftside .bg-no1-2 {
-  height: 3414px;
+  height: 3289px;
 }
 
 .background .background-leftside .bg-no1-2 img {
@@ -84,7 +84,7 @@ body {
 }
 
 .background .background-leftside .bg-yuryo {
-  height: 2034px;
+  height: 1875px;
 }
 
 .background .background-leftside .bg-kosarubg2 {
@@ -152,11 +152,11 @@ body {
 }
 
 .background .background-rightside .bg-yuka {
-  height: 3080px;
+  height: 3020px;
 }
 
 .background .background-rightside .bg-riyu {
-  height: 1828px;
+  height: 1750px;
 }
 
 .background .background-rightside .bg-riyu img {
@@ -204,7 +204,6 @@ body {
   display: block;
   float: left;
   border-radius: 20px 20px 0 0;
-  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   font-size: 36px;
   font-weight: 500;
@@ -233,7 +232,7 @@ body {
 
 .tabs .tab_content .sangatsu .month3 {
   width: inherit;
-  margin-top: 80px;
+  margin-top: 55px;
   position: absolute;
 }
 
@@ -253,7 +252,12 @@ body {
   top: 104%;
 }
 
-.tabs .tab_content .no1 img {
+.tabs .tab_content .no1 .no1-pc {
+  width: 100%;
+}
+
+.tabs .tab_content .no1 .no1-mb {
+  display: none;
   width: 100%;
 }
 
@@ -303,7 +307,12 @@ body {
   top: 376%;
 }
 
-.tabs .tab_content .konsaru img {
+.tabs .tab_content .konsaru .konsaru-pc {
+  width: 100%;
+}
+
+.tabs .tab_content .konsaru .konsaru-mb {
+  display: none;
   width: 100%;
 }
 
@@ -333,13 +342,18 @@ body {
   top: 643%;
 }
 
-.tabs .tab_content .nagare img {
+.tabs .tab_content .nagare .nagare-pc {
+  width: 100%;
+}
+
+.tabs .tab_content .nagare .nagare-mb {
+  display: none;
   width: 100%;
 }
 
 .tabs .tab_content .yuuryou {
   position: absolute;
-  top: 822%;
+  top: 816%;
   left: 8%;
 }
 
@@ -349,7 +363,7 @@ body {
 
 .tabs .tab_content .ng {
   position: absolute;
-  top: 930%;
+  top: 916%;
 }
 
 .tabs .tab_content .ng .ng-pc {
@@ -364,7 +378,7 @@ body {
 .tabs .tab_content .yokuaru-container {
   position: absolute;
   width: 750px;
-  top: 1021%;
+  top: 1005%;
 }
 
 .tabs .tab_content .yokuaru-container .footer-mb {
@@ -408,7 +422,12 @@ body {
   top: 106%;
 }
 
-.tabs .tab_content.tabRight .tabRight-warning img {
+.tabs .tab_content.tabRight .tabRight-warning .warning-pc {
+  width: 100%;
+}
+
+.tabs .tab_content.tabRight .tabRight-warning .warning-mb {
+  display: none;
   width: 100%;
 }
 
@@ -426,7 +445,12 @@ body {
   top: 247%;
 }
 
-.tabs .tab_content.tabRight .tabRight-konsaru img {
+.tabs .tab_content.tabRight .tabRight-konsaru .konsaru-pc {
+  width: 100%;
+}
+
+.tabs .tab_content.tabRight .tabRight-konsaru .konsaru-mb {
+  display: none;
   width: 100%;
 }
 
@@ -435,7 +459,12 @@ body {
   top: 300%;
 }
 
-.tabs .tab_content.tabRight .tabRight-konsaru2 img {
+.tabs .tab_content.tabRight .tabRight-konsaru2 .konsaru2-pc {
+  width: 100%;
+}
+
+.tabs .tab_content.tabRight .tabRight-konsaru2 .konsaru2-mb {
+  display: none;
   width: 100%;
 }
 
@@ -446,25 +475,42 @@ body {
 }
 
 .tabs .tab_content.tabRight .tabRight-yuryou .yuryou {
-  margin-top: 95px;
+  margin-top: 30px;
 }
 
 .tabs .tab_content.tabRight .tabRight-riyu {
   position: absolute;
-  top: 555%;
+  top: 552%;
 }
 
-.tabs .tab_content.tabRight .tabRight-riyu img {
+.tabs .tab_content.tabRight .tabRight-riyu .riyu-pc {
+  width: 100%;
+}
+
+.tabs .tab_content.tabRight .tabRight-riyu .riyu-mb {
+  display: none;
   width: 100%;
 }
 
 .tabs .tab_content.tabRight .tabRight-yokuaru {
   position: absolute;
-  top: 645%;
+  top: 637%;
 }
 
 .tabs .tab_content.tabRight .tabRight-yokuaru .yokuaru {
   margin-bottom: 20px;
+}
+
+.tabs .tab_content.tabRight .tabRight-yokuaru .footer-mb {
+  display: none;
+  height: 80px;
+  background: #002882;
+  text-align: center;
+}
+
+.tabs .tab_content.tabRight .tabRight-yokuaru .footer-mb p {
+  padding-top: 25px;
+  color: white;
 }
 
 /*ラジオボタンを全て消す*/
@@ -497,12 +543,169 @@ input[name="tab_item"] {
   margin-top: 0px;
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 768px) {
   .background {
     display: none !important;
   }
+  .tabs .tab_content .sangatsu {
+    height: 840px;
+  }
+  .tabs .tab_content .sangatsu .button {
+    width: 80%;
+    top: 51%;
+    left: 10%;
+  }
+  .tabs .tab_content .no1 .no1-pc {
+    display: none;
+  }
+  .tabs .tab_content .no1 .no1-mb {
+    display: block;
+  }
+  .tabs .tab_content .yottsu {
+    top: 200%;
+  }
+  .tabs .tab_content .yottsu .yottsu-pc {
+    display: none;
+  }
+  .tabs .tab_content .yottsu .yottsu-mb {
+    display: block;
+  }
+  .tabs .tab_content .warning {
+    top: 273%;
+  }
+  .tabs .tab_content .warning .warning-pc {
+    display: none;
+  }
+  .tabs .tab_content .warning .warning-mb {
+    display: block;
+  }
+  .tabs .tab_content .yuuryou {
+    left: 0;
+  }
+  .tabs .tab_content .nayami {
+    top: 333%;
+  }
+  .tabs .tab_content .konsaru {
+    top: 400%;
+  }
+  .tabs .tab_content .konsaru .konsaru-pc {
+    display: none;
+  }
+  .tabs .tab_content .konsaru .konsaru-mb {
+    display: block;
+  }
+  .tabs .tab_content .konsaru2 {
+    top: 461%;
+  }
+  .tabs .tab_content .konsaru2 .konsaru2-pc {
+    display: none;
+  }
+  .tabs .tab_content .konsaru2 .konsaru2-mb {
+    display: block;
+  }
+  .tabs .tab_content .tasya-container {
+    top: 539%;
+    width: 750px;
+  }
+  .tabs .tab_content .tasya-container .tasya {
+    margin-top: 50px;
+  }
+  .tabs .tab_content .nagare {
+    top: 683%;
+  }
+  .tabs .tab_content .nagare .nagare-pc {
+    display: none;
+  }
+  .tabs .tab_content .nagare .nagare-mb {
+    display: block;
+  }
+  .tabs .tab_content .yuuryou {
+    top: 877%;
+  }
+  .tabs .tab_content .ng {
+    top: 986%;
+  }
+  .tabs .tab_content .ng .ng-pc {
+    display: none;
+  }
+  .tabs .tab_content .ng .ng-mb {
+    display: block;
+  }
+  .tabs .tab_content .yokuaru-container {
+    top: 1085%;
+    width: 750px;
+  }
+  .tabs .tab_content .yokuaru-container .sangatsu .month3 {
+    margin-top: 63px;
+  }
+  .tabs .tab_content .yokuaru-container .sangatsu .button {
+    width: 80%;
+  }
+  .tabs .tab_content .yokuaru-container img {
+    width: 100%;
+  }
+  .tabs .tab_content .yokuaru-container .footer-mb {
+    margin-top: 40px;
+    display: block;
+  }
+  .tabs .tab_content.tabRight .tabRight-sangatsu img {
+    width: 100%;
+  }
+  .tabs .tab_content.tabRight .tabRight-sangatsu .button {
+    width: 80%;
+    top: 54%;
+    left: 10%;
+  }
+  .tabs .tab_content.tabRight .tabRight-warning {
+    top: 103%;
+  }
+  .tabs .tab_content.tabRight .tabRight-warning .warning-pc {
+    display: none;
+  }
+  .tabs .tab_content.tabRight .tabRight-warning .warning-mb {
+    display: block;
+  }
+  .tabs .tab_content.tabRight .tabRight-konsaru {
+    top: 243%;
+  }
+  .tabs .tab_content.tabRight .tabRight-konsaru .konsaru-pc {
+    display: none;
+  }
+  .tabs .tab_content.tabRight .tabRight-konsaru .konsaru-mb {
+    display: block;
+  }
+  .tabs .tab_content.tabRight .tabRight-konsaru2 {
+    top: 296%;
+  }
+  .tabs .tab_content.tabRight .tabRight-konsaru2 .konsaru2-pc {
+    display: none;
+  }
+  .tabs .tab_content.tabRight .tabRight-konsaru2 .konsaru2-mb {
+    display: block;
+  }
+  .tabs .tab_content.tabRight .tabRight-yuryou {
+    top: 394%;
+  }
+  .tabs .tab_content.tabRight .tabRight-riyu {
+    top: 545%;
+  }
+  .tabs .tab_content.tabRight .tabRight-riyu .riyu-pc {
+    display: none;
+  }
+  .tabs .tab_content.tabRight .tabRight-riyu .riyu-mb {
+    display: block;
+  }
+  .tabs .tab_content.tabRight .tabRight-yokuaru img {
+    width: 100%;
+  }
+  .tabs .tab_content.tabRight .tabRight-yokuaru .footer-mb {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 415px) {
   .tabs {
-    width: 412px !important;
+    width: 413px !important;
   }
   .tabs .tab_item {
     font-size: 25px;
@@ -516,36 +719,19 @@ input[name="tab_item"] {
     height: 100px !important;
   }
   .tabs .tab_content .sangatsu {
-    height: 530px;
+    height: 490px;
   }
   .tabs .tab_content .sangatsu .button {
-    width: 80%;
-    top: 52%;
-    left: 10%;
+    top: 53%;
   }
   .tabs .tab_content .yottsu {
-    top: 183%;
-  }
-  .tabs .tab_content .yottsu .yottsu-pc {
-    display: none;
-  }
-  .tabs .tab_content .yottsu .yottsu-mb {
-    display: block;
+    top: 189%;
   }
   .tabs .tab_content .warning {
-    top: 248%;
-  }
-  .tabs .tab_content .warning .warning-pc {
-    display: none;
-  }
-  .tabs .tab_content .warning .warning-mb {
-    display: block;
+    top: 256%;
   }
   .tabs .tab_content .tasya-container {
-    width: 414px;
-  }
-  .tabs .tab_content .tasya-container .sangatsu .button {
-    width: 80%;
+    width: 413px;
   }
   .tabs .tab_content .tasya-container img {
     width: 100%;
@@ -554,74 +740,76 @@ input[name="tab_item"] {
     left: 0;
   }
   .tabs .tab_content .nayami {
-    top: 302%;
+    top: 311%;
   }
   .tabs .tab_content .konsaru {
-    top: 362%;
+    top: 373%;
   }
   .tabs .tab_content .konsaru2 {
-    top: 408%;
-  }
-  .tabs .tab_content .konsaru2 .konsaru2-pc {
-    display: none;
-  }
-  .tabs .tab_content .konsaru2 .konsaru2-mb {
-    display: block;
+    top: 429%;
   }
   .tabs .tab_content .tasya-container {
-    top: 467%;
+    top: 499%;
   }
   .tabs .tab_content .tasya-container .tasya {
     margin-top: 25px;
   }
   .tabs .tab_content .nagare {
-    top: 603%;
+    top: 636%;
   }
   .tabs .tab_content .yuuryou {
-    top: 763%;
+    top: 813%;
   }
   .tabs .tab_content .ng {
-    top: 867%;
-  }
-  .tabs .tab_content .ng .ng-pc {
-    display: none;
-  }
-  .tabs .tab_content .ng .ng-mb {
-    display: block;
+    top: 914%;
   }
   .tabs .tab_content .yokuaru-container {
-    top: 957%;
-    width: 414px;
-  }
-  .tabs .tab_content .yokuaru-container .sangatsu .month3 {
-    margin-top: 63px;
-  }
-  .tabs .tab_content .yokuaru-container .sangatsu .button {
-    width: 80%;
-  }
-  .tabs .tab_content .yokuaru-container img {
-    width: 100%;
+    top: 1007%;
+    width: 413px;
   }
   .tabs .tab_content .yokuaru-container .footer-mb {
+    margin-top: 40px;
     display: block;
+  }
+  .tabs .tab_content.tabRight .tabRight-sangatsu .month3 {
+    margin-top: 40px;
   }
   .tabs .tab_content.tabRight .tabRight-sangatsu .button {
     width: 80%;
-    top: 58%;
+    top: 54%;
     left: 10%;
   }
   .tabs .tab_content.tabRight .tabRight-sangatsu {
     height: 580px;
   }
+  .tabs .tab_content.tabRight .tabRight-warning {
+    top: 102%;
+  }
+  .tabs .tab_content.tabRight .tabRight-tasya {
+    top: 148%;
+  }
+  .tabs .tab_content.tabRight .tabRight-konsaru {
+    top: 236%;
+  }
+  .tabs .tab_content.tabRight .tabRight-konsaru2 {
+    top: 286%;
+  }
   .tabs .tab_content.tabRight .tabRight-yuryou {
-    width: 414px;
+    top: 380%;
+    width: 413px;
+  }
+  .tabs .tab_content.tabRight .tabRight-yuryou img {
+    width: 100%;
+  }
+  .tabs .tab_content.tabRight .tabRight-riyu {
+    top: 526%;
+  }
+  .tabs .tab_content.tabRight .tabRight-yokuaru {
+    top: 615%;
   }
 }
 
 @media only screen and (max-width: 376px) {
-  .background .background-leftside {
-    display: none;
-  }
   .tabs {
     width: 375px !important;
   }
@@ -633,8 +821,45 @@ input[name="tab_item"] {
   .tabs .tab_content .tasya-container {
     width: 374px;
   }
+  .tabs .tab_content .sangatsu {
+    height: 455px;
+  }
   .tabs .tab_content .yokuaru-container {
     width: 374px;
+  }
+  .tabs .tab_content.tabRight .tabRight-sangatsu .button {
+    top: 50%;
+  }
+  .tabs .tab_content.tabRight .tabRight-warning {
+    top: 97%;
+  }
+  .tabs .tab_content.tabRight .tabRight-tasya {
+    top: 141%;
+  }
+  .tabs .tab_content.tabRight .tabRight-konsaru {
+    top: 224%;
+  }
+  .tabs .tab_content.tabRight .tabRight-konsaru2 {
+    top: 272%;
+  }
+  .tabs .tab_content.tabRight .tabRight-yuryou {
+    top: 360%;
+    width: 374px;
+  }
+  .tabs .tab_content.tabRight .tabRight-yuryou .yuryou {
+    margin-top: -30px;
+  }
+  .tabs .tab_content.tabRight .tabRight-riyu {
+    top: 497%;
+  }
+  .tabs .tab_content.tabRight .tabRight-yokuaru {
+    top: 580%;
+  }
+  .tabs .tab_content.tabRight .tabRight-yokuaru .tabRight-sangatsu {
+    height: 535px;
+  }
+  .tabs .tab_content.tabRight .tabRight-yokuaru .tabRight-sangatsu .button {
+    top: 53%;
   }
 }
 /*# sourceMappingURL=main.css.map */

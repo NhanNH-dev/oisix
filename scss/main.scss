@@ -10,7 +10,7 @@ body {
   top: 140px;
   .background-leftside {
     .bg-kanzen {
-      height: 805px;
+      height: 803px;
       background: #f4f4f4;
     }
     .bg-sangatsu {
@@ -65,7 +65,7 @@ body {
       }
     }
     .bg-yuryo {
-      height: 2034px;
+      height: 1875px;
     }
     .bg-kosarubg2 {
       height: 1742px;
@@ -118,10 +118,10 @@ body {
       }
     }
     .bg-yuka {
-      height: 3080px;
+      height: 3020px;
     }
     .bg-riyu {
-      height: 1828px;
+      height: 1750px;
       img {
         width: 100%;
         height: inherit;
@@ -187,7 +187,7 @@ body {
       position: relative;
       .month3 {
         width: inherit;
-        margin-top: 80px;
+        margin-top: 55px;
         position: absolute;
       }
       .button {
@@ -203,7 +203,11 @@ body {
       position: absolute;
       height: 1484px;
       top: 104%;
-      img {
+      .no1-pc {
+        width: 100%;
+      }
+      .no1-mb {
+        display: none;
         width: 100%;
       }
     }
@@ -243,7 +247,11 @@ body {
       position: absolute;
       height: 925px;
       top: 376%;
-      img {
+      .konsaru-pc {
+        width: 100%;
+      }
+      .konsaru-mb {
+        display: none;
         width: 100%;
       }
     }
@@ -267,13 +275,17 @@ body {
     .nagare {
       position: absolute;
       top: 643%;
-      img {
+      .nagare-pc {
+        width: 100%;
+      }
+      .nagare-mb {
+        display: none;
         width: 100%;
       }
     }
     .yuuryou {
       position: absolute;
-      top: 822%;
+      top: 816%;
       left: 8%;
       img {
         width: 100%;
@@ -281,7 +293,7 @@ body {
     }
     .ng {
       position: absolute;
-      top: 930%;
+      top: 916%;
       .ng-pc {
         width: 100%;
       }
@@ -293,7 +305,7 @@ body {
     .yokuaru-container {
       position: absolute;
       width: 750px;
-      top: 1021%;
+      top: 1005%;
       .footer-mb {
         display: none;
         height: 80px;
@@ -332,7 +344,11 @@ body {
     .tabRight-warning {
       position: absolute;
       top: 106%;
-      img {
+      .warning-pc {
+        width: 100%;
+      }
+      .warning-mb {
+        display: none;
         width: 100%;
       }
     }
@@ -346,14 +362,22 @@ body {
     .tabRight-konsaru {
       position: absolute;
       top: 247%;
-      img {
+      .konsaru-pc {
+        width: 100%;
+      }
+      .konsaru-mb {
+        display: none;
         width: 100%;
       }
     }
     .tabRight-konsaru2 {
       position: absolute;
       top: 300%;
-      img {
+      .konsaru2-pc {
+        width: 100%;
+      }
+      .konsaru2-mb {
+        display: none;
         width: 100%;
       }
     }
@@ -362,21 +386,35 @@ body {
       width: 750px;
       top: 396%;
       .yuryou {
-        margin-top: 95px;
+        margin-top: 30px;
       }
     }
     .tabRight-riyu {
       position: absolute;
-      top: 555%;
-      img {
+      top: 552%;
+      .riyu-pc {
+        width: 100%;
+      }
+      .riyu-mb {
+        display: none;
         width: 100%;
       }
     }
     .tabRight-yokuaru {
       position: absolute;
-      top: 645%;
+      top: 637%;
       .yokuaru {
         margin-bottom: 20px;
+      }
+      .footer-mb {
+        display: none;
+        height: 80px;
+        background: #002882;
+        text-align: center;
+        p {
+          padding-top: 25px;
+          color: white;
+        }
       }
     }
   }
@@ -410,12 +448,183 @@ input[name="tab_item"] {
   height: 120px;
   margin-top: 0px;
 }
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 768px) {
   .background {
     display: none !important;
   }
   .tabs {
-    width: 412px !important;
+    .tab_content {
+      .sangatsu {
+        height: 840px;
+        .button {
+          width: 80%;
+          top: 51%;
+          left: 10%;
+        }
+      }
+      .no1 {
+        .no1-pc {
+          display: none;
+        }
+        .no1-mb {
+          display: block;
+        }
+      }
+      .yottsu {
+        top: 200%;
+        .yottsu-pc {
+          display: none;
+        }
+        .yottsu-mb {
+          display: block;
+        }
+      }
+      .warning {
+        top: 273%;
+        .warning-pc {
+          display: none;
+        }
+        .warning-mb {
+          display: block;
+        }
+      }
+      .yuuryou {
+        left: 0;
+      }
+      .nayami {
+        top: 333%;
+      }
+      .konsaru {
+        top: 400%;
+        .konsaru-pc {
+          display: none;
+        }
+        .konsaru-mb {
+          display: block;
+        }
+      }
+      .konsaru2 {
+        top: 461%;
+        .konsaru2-pc {
+          display: none;
+        }
+        .konsaru2-mb {
+          display: block;
+        }
+      }
+      .tasya-container {
+        top: 539%;
+        width: 750px;
+        .tasya {
+          margin-top: 50px;
+        }
+      }
+      .nagare {
+        top: 683%;
+        .nagare-pc {
+          display: none;
+        }
+        .nagare-mb {
+          display: block;
+        }
+      }
+      .yuuryou {
+        top: 877%;
+      }
+      .ng {
+        top: 986%;
+        .ng-pc {
+          display: none;
+        }
+        .ng-mb {
+          display: block;
+        }
+      }
+      .yokuaru-container {
+        top: 1085%;
+        width: 750px;
+        .sangatsu {
+          .month3 {
+            margin-top: 63px;
+          }
+          .button {
+            width: 80%;
+          }
+        }
+        img {
+          width: 100%;
+        }
+        .footer-mb {
+          margin-top: 40px;
+          display: block;
+        }
+      }
+    }
+    .tab_content.tabRight {
+      .tabRight-sangatsu {
+        img {
+          width: 100%;
+        }
+        .button {
+          width: 80%;
+          top: 54%;
+          left: 10%;
+        }
+      }
+      .tabRight-warning {
+        top: 103%;
+        .warning-pc {
+          display: none;
+        }
+        .warning-mb {
+          display: block;
+        }
+      }
+      .tabRight-konsaru {
+        top: 243%;
+        .konsaru-pc {
+          display: none;
+        }
+        .konsaru-mb {
+          display: block;
+        }
+      }
+      .tabRight-konsaru2 {
+        top: 296%;
+        .konsaru2-pc {
+          display: none;
+        }
+        .konsaru2-mb {
+          display: block;
+        }
+      }
+      .tabRight-yuryou {
+        top: 394%;
+      }
+      .tabRight-riyu {
+        top: 545%;
+        .riyu-pc {
+          display: none;
+        }
+        .riyu-mb {
+          display: block;
+        }
+      }
+      .tabRight-yokuaru {
+        img {
+          width: 100%;
+        }
+        .footer-mb {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .tabs {
+    width: 413px !important;
     .tab_item {
       font-size: 25px;
       line-height: 35px;
@@ -429,38 +638,19 @@ input[name="tab_item"] {
     }
     .tab_content {
       .sangatsu {
-        height: 530px;
+        height: 490px;
         .button {
-          width: 80%;
-          top: 52%;
-          left: 10%;
+          top: 53%;
         }
       }
       .yottsu {
-        top: 183%;
-        .yottsu-pc {
-          display: none;
-        }
-        .yottsu-mb {
-          display: block;
-        }
+        top: 189%;
       }
       .warning {
-        top: 248%;
-        .warning-pc {
-          display: none;
-        }
-        .warning-mb {
-          display: block;
-        }
+        top: 256%;
       }
       .tasya-container {
         width: 413px;
-        .sangatsu {
-          .button {
-            width: 80%;
-          }
-        }
         img {
           width: 100%;
         }
@@ -469,83 +659,89 @@ input[name="tab_item"] {
         left: 0;
       }
       .nayami {
-        top: 302%;
+        top: 311%;
       }
       .konsaru {
-        top: 362%;
+        top: 373%;
       }
       .konsaru2 {
-        top: 408%;
-        .konsaru2-pc {
-          display: none;
-        }
-        .konsaru2-mb {
-          display: block;
-        }
+        top: 429%;
       }
       .tasya-container {
-        top: 467%;
+        top: 499%;
         .tasya {
           margin-top: 25px;
         }
       }
       .nagare {
-        top: 603%;
+        top: 636%;
       }
       .yuuryou {
-        top: 763%;
+        top: 813%;
       }
       .ng {
-        top: 867%;
-        .ng-pc {
-          display: none;
-        }
-        .ng-mb {
-          display: block;
-        }
+        top: 914%;
       }
       .yokuaru-container {
-        top: 957%;
+        top: 1007%;
         width: 413px;
-        .sangatsu {
-          .month3 {
-            margin-top: 63px;
-          }
-          .button {
-            width: 80%;
-          }
-        }
-        img {
-          width: 100%;
-        }
+        // .sangatsu {
+        //   .month3 {
+        //     margin-top: 63px;
+        //   }
+        //   .button {
+        //     width: 80%;
+        //   }
+        // }
         .footer-mb {
+          margin-top: 40px;
           display: block;
         }
       }
     }
     .tab_content.tabRight {
       .tabRight-sangatsu {
+        .month3 {
+          margin-top: 40px;
+        }
         .button {
           width: 80%;
-          top: 58%;
+          top: 54%;
           left: 10%;
         }
       }
       .tabRight-sangatsu {
         height: 580px;
       }
+      .tabRight-warning {
+        top: 102%;
+      }
+      .tabRight-tasya {
+        top: 148%;
+      }
+      .tabRight-konsaru {
+        top: 236%;
+      }
+      .tabRight-konsaru2 {
+        top: 286%;
+      }
       .tabRight-yuryou {
+        top: 380%;
         width: 413px;
+        img {
+          width: 100%;
+        }
+      }
+      .tabRight-riyu {
+        top: 526%;
+      }
+      .tabRight-yokuaru {
+        top: 615%;
       }
     }
   }
 }
 @media only screen and (max-width: 376px) {
-  .background {
-    .background-leftside {
-      display: none;
-    }
-  }
   .tabs {
     width: 375px !important;
     .tab_item {
@@ -557,8 +753,49 @@ input[name="tab_item"] {
       .tasya-container {
         width: 374px;
       }
+      .sangatsu {
+        height: 455px;
+      }
       .yokuaru-container {
         width: 374px;
+      }
+    }
+    .tab_content.tabRight {
+      .tabRight-sangatsu {
+        .button {
+          top: 50%;
+        }
+      }
+      .tabRight-warning {
+        top: 97%;
+      }
+      .tabRight-tasya {
+        top: 141%;
+      }
+      .tabRight-konsaru {
+        top: 224%;
+      }
+      .tabRight-konsaru2 {
+        top: 272%;
+      }
+      .tabRight-yuryou {
+        top: 360%;
+        width: 374px;
+        .yuryou {
+          margin-top: -30px;
+        }
+      }
+      .tabRight-riyu{
+        top: 497%;
+      }
+      .tabRight-yokuaru{
+        top: 580%;
+        .tabRight-sangatsu{
+          height: 535px;
+          .button{
+            top: 53%;
+          }
+        }
       }
     }
   }
