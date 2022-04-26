@@ -513,6 +513,17 @@ body {
   color: white;
 }
 
+.button-mb {
+  position: fixed;
+  bottom: 0;
+  background: #767676;
+  width: 100%;
+  padding: 30px 0 20px;
+  text-align: center;
+  z-index: 50;
+  display: none;
+}
+
 /*ラジオボタンを全て消す*/
 input[name="tab_item"] {
   display: none;
@@ -646,6 +657,7 @@ input[name="tab_item"] {
   }
   .tabs .tab_content .yokuaru-container .footer-mb {
     margin-top: 40px;
+    margin-bottom: 200px;
     display: block;
   }
   .tabs .tab_content.tabRight .tabRight-sangatsu img {
@@ -699,6 +711,10 @@ input[name="tab_item"] {
     width: 100%;
   }
   .tabs .tab_content.tabRight .tabRight-yokuaru .footer-mb {
+    margin-bottom: 200px;
+    display: block;
+  }
+  .button-mb {
     display: block;
   }
 }
@@ -768,6 +784,7 @@ input[name="tab_item"] {
     width: 413px;
   }
   .tabs .tab_content .yokuaru-container .footer-mb {
+    margin-bottom: 100px;
     margin-top: 40px;
     display: block;
   }
@@ -806,6 +823,15 @@ input[name="tab_item"] {
   }
   .tabs .tab_content.tabRight .tabRight-yokuaru {
     top: 615%;
+  }
+  .tabs .tab_content.tabRight .tabRight-yokuaru .footer-mb {
+    margin-bottom: 100px;
+  }
+  .button-mb {
+    padding: 20px 0 10px;
+  }
+  .button-mb .button {
+    width: 90%;
   }
 }
 
