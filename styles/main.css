@@ -194,16 +194,17 @@ body {
 .tabs .tab_item {
   z-index: 5;
   margin-top: 20px;
-  padding-top: 10px;
+  padding-top: 15px;
   width: calc(100% / 2);
   height: 100px;
   background-color: #d3d3d3;
-  line-height: 50px;
+  line-height: 45px;
   text-align: center;
   color: #fff;
   display: block;
   float: left;
   border-radius: 20px 20px 0 0;
+  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   font-size: 36px;
   font-weight: 500;
@@ -244,6 +245,7 @@ body {
 
 .tabs .tab_content .sangatsu .button:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 
 .tabs .tab_content .no1 {
@@ -415,6 +417,7 @@ body {
 
 .tabs .tab_content.tabRight .tabRight-sangatsu .button:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 
 .tabs .tab_content.tabRight .tabRight-warning {
@@ -537,12 +540,19 @@ input[name="tab_item"] {
   z-index: 5;
 }
 
+.tab_item br {
+  display: block;
+  content: "";
+  margin: 0;
+}
+
 /*選択されているタブのスタイルを変える*/
 .tabs input:checked + .tab_item.left {
   background-color: #2e46d6;
   color: #fff;
   height: 120px;
   margin-top: 0px;
+  line-height: 55px;
   border-bottom: 8px solid #2e46d6;
 }
 
@@ -551,6 +561,7 @@ input[name="tab_item"] {
   border-bottom: 8px solid #f03039;
   color: #fff;
   height: 120px;
+  line-height: 55px;
   margin-top: 0px;
 }
 
@@ -597,7 +608,7 @@ input[name="tab_item"] {
     top: 333%;
   }
   .tabs .tab_content .konsaru {
-    top: 400%;
+    top: 403%;
   }
   .tabs .tab_content .konsaru .konsaru-pc {
     display: none;
@@ -606,7 +617,7 @@ input[name="tab_item"] {
     display: block;
   }
   .tabs .tab_content .konsaru2 {
-    top: 461%;
+    top: 459%;
   }
   .tabs .tab_content .konsaru2 .konsaru2-pc {
     display: none;
@@ -720,12 +731,26 @@ input[name="tab_item"] {
 }
 
 @media only screen and (max-width: 415px) {
+  .tabs .tab_item {
+    padding-top: 0;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .tabs input:checked + .tab_item.left {
+    line-height: 75px;
+  }
+  .tabs input:checked + .tab_item br {
+    margin: -35px;
+  }
+  .tabs input:checked + .tab_item.right {
+    line-height: 75px;
+  }
   .tabs {
     width: 413px !important;
   }
   .tabs .tab_item {
     font-size: 25px;
-    line-height: 35px;
+    line-height: 40px;
     height: 80px;
   }
   .tabs input:checked + .tab_item.left {
@@ -762,25 +787,25 @@ input[name="tab_item"] {
     top: 373%;
   }
   .tabs .tab_content .konsaru2 {
-    top: 429%;
+    top: 425%;
   }
   .tabs .tab_content .tasya-container {
-    top: 499%;
+    top: 493%;
   }
   .tabs .tab_content .tasya-container .tasya {
     margin-top: 25px;
   }
   .tabs .tab_content .nagare {
-    top: 636%;
+    top: 628%;
   }
   .tabs .tab_content .yuuryou {
-    top: 813%;
+    top: 805%;
   }
   .tabs .tab_content .ng {
-    top: 914%;
+    top: 905%;
   }
   .tabs .tab_content .yokuaru-container {
-    top: 1007%;
+    top: 996%;
     width: 413px;
   }
   .tabs .tab_content .yokuaru-container .footer-mb {
@@ -841,7 +866,7 @@ input[name="tab_item"] {
   }
   .tabs .tab_item {
     font-size: 25px;
-    line-height: 35px;
+    line-height: 40px;
     height: 80px;
   }
   .tabs .tab_content .tasya-container {
@@ -849,6 +874,9 @@ input[name="tab_item"] {
   }
   .tabs .tab_content .sangatsu {
     height: 455px;
+  }
+  .tabs .tab_content .konsaru2 {
+    top: 424%;
   }
   .tabs .tab_content .yokuaru-container {
     width: 374px;
