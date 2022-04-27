@@ -84,6 +84,9 @@ body {
       p {
         padding-top: 25px;
         color: white;
+        a {
+          color: inherit;
+        }
       }
     }
   }
@@ -137,6 +140,9 @@ body {
       p {
         padding-top: 25px;
         color: white;
+        a {
+          color: inherit;
+        }
       }
     }
   }
@@ -308,11 +314,19 @@ body {
       top: 1005%;
       .footer-mb {
         display: none;
-        height: 80px;
+        height: 120px;
         background: #002882;
         text-align: center;
-        p {
-          padding-top: 25px;
+        .footer-content{
+          padding-top: 15px;
+          margin: 0;
+          color: white;
+          a {
+            color: inherit;
+          }
+        }
+        .footer-copy {
+          padding-top: 0px;
           color: white;
         }
       }
@@ -328,7 +342,6 @@ body {
       position: relative;
       height: 1037px;
       .month3 {
-        // width: 100%;
         margin-top: 70px;
         position: absolute;
       }
@@ -408,11 +421,19 @@ body {
       }
       .footer-mb {
         display: none;
-        height: 80px;
+        height: 120px;
         background: #002882;
         text-align: center;
-        p {
-          padding-top: 25px;
+        .footer-content{
+          padding-top: 15px;
+          margin: 0;
+          color: white;
+          a {
+            color: inherit;
+          }
+        }
+        .footer-copy {
+          padding-top: 0px;
           color: white;
         }
       }
@@ -700,7 +721,8 @@ input[name="tab_item"] {
         top: 1007%;
         width: 413px;
         .footer-mb {
-          margin-bottom: 100px;
+          height: 125px;
+          margin-bottom: 110px;
           margin-top: 40px;
           display: block;
         }
@@ -744,15 +766,16 @@ input[name="tab_item"] {
       }
       .tabRight-yokuaru {
         top: 615%;
-        .footer-mb{
-          margin-bottom: 100px;
+        .footer-mb {
+          height: 125px;
+          margin-bottom: 110px;
         }
       }
     }
   }
   .button-mb {
     padding: 20px 0 10px;
-    .button{
+    .button {
       width: 90%;
     }
   }

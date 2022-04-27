@@ -111,6 +111,10 @@ body {
   color: white;
 }
 
+.background .background-leftside .footer p a {
+  color: inherit;
+}
+
 .background .background-rightside {
   display: none;
 }
@@ -177,6 +181,10 @@ body {
 .background .background-rightside .footer p {
   padding-top: 25px;
   color: white;
+}
+
+.background .background-rightside .footer p a {
+  color: inherit;
 }
 
 /*タブ切り替え全体のスタイル*/
@@ -383,13 +391,23 @@ body {
 
 .tabs .tab_content .yokuaru-container .footer-mb {
   display: none;
-  height: 80px;
+  height: 120px;
   background: #002882;
   text-align: center;
 }
 
-.tabs .tab_content .yokuaru-container .footer-mb p {
-  padding-top: 25px;
+.tabs .tab_content .yokuaru-container .footer-mb .footer-content {
+  padding-top: 15px;
+  margin: 0;
+  color: white;
+}
+
+.tabs .tab_content .yokuaru-container .footer-mb .footer-content a {
+  color: inherit;
+}
+
+.tabs .tab_content .yokuaru-container .footer-mb .footer-copy {
+  padding-top: 0px;
   color: white;
 }
 
@@ -503,13 +521,23 @@ body {
 
 .tabs .tab_content.tabRight .tabRight-yokuaru .footer-mb {
   display: none;
-  height: 80px;
+  height: 120px;
   background: #002882;
   text-align: center;
 }
 
-.tabs .tab_content.tabRight .tabRight-yokuaru .footer-mb p {
-  padding-top: 25px;
+.tabs .tab_content.tabRight .tabRight-yokuaru .footer-mb .footer-content {
+  padding-top: 15px;
+  margin: 0;
+  color: white;
+}
+
+.tabs .tab_content.tabRight .tabRight-yokuaru .footer-mb .footer-content a {
+  color: inherit;
+}
+
+.tabs .tab_content.tabRight .tabRight-yokuaru .footer-mb .footer-copy {
+  padding-top: 0px;
   color: white;
 }
 
@@ -784,7 +812,8 @@ input[name="tab_item"] {
     width: 413px;
   }
   .tabs .tab_content .yokuaru-container .footer-mb {
-    margin-bottom: 100px;
+    height: 125px;
+    margin-bottom: 110px;
     margin-top: 40px;
     display: block;
   }
@@ -825,7 +854,8 @@ input[name="tab_item"] {
     top: 615%;
   }
   .tabs .tab_content.tabRight .tabRight-yokuaru .footer-mb {
-    margin-bottom: 100px;
+    height: 125px;
+    margin-bottom: 110px;
   }
   .button-mb {
     padding: 20px 0 10px;
