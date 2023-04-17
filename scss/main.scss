@@ -7,7 +7,6 @@ body {
   z-index: 1;
   position: absolute;
   width: 100%;
-  top: 140px;
   .background-leftside {
     .bg-kanzen {
       height: 803px;
@@ -91,7 +90,7 @@ body {
     }
   }
   .background-rightside {
-    display: none;
+    display: block;
     .bg-kanzen {
       height: 803px;
       background: #f4f4f4;
@@ -155,185 +154,9 @@ body {
   width: 750px;
   margin: 0 auto;
   position: relative;
-  /*タブのスタイル*/
-  .tab_item {
-    z-index: 5;
-    margin-top: 20px;
-    padding-top: 15px;
-    width: calc(100% / 2);
-    height: 100px;
-    background-color: #d3d3d3;
-    line-height: 45px;
-    text-align: center;
-    color: #fff;
-    display: block;
-    float: left;
-    border-radius: 20px 20px 0 0;
-    transition: all 0.2s ease;
-    font-size: 36px;
-    font-weight: 500;
-    border-bottom: 8px solid #2e46d6;
-  }
-  .tab_item:hover {
-    opacity: 0.85;
-  }
   /*タブ切り替えの中身のスタイル*/
-  .tab_content {
-    display: none;
-    clear: both;
-    overflow: hidden;
-    .kanzen {
-      img {
-        width: 100%;
-      }
-    }
-    .sangatsu {
-      height: 947px;
-      width: 100%;
-      position: relative;
-      .month3 {
-        width: inherit;
-        margin-top: 55px;
-        position: absolute;
-      }
-      .button {
-        top: 44%;
-        left: 7%;
-        position: absolute;
-      }
-      .button:hover {
-        cursor: pointer;
-        opacity: 0.8;
-      }
-    }
-    .no1 {
-      position: absolute;
-      height: 1484px;
-      top: 104%;
-      .no1-pc {
-        width: 100%;
-      }
-      .no1-mb {
-        display: none;
-        width: 100%;
-      }
-    }
-    .yottsu {
-      position: absolute;
-      height: 1090px;
-      top: 191%;
-      .yottsu-pc {
-        width: 100%;
-      }
-      .yottsu-mb {
-        display: none;
-        width: 100%;
-      }
-    }
-    .warning {
-      position: absolute;
-      height: 835px;
-      top: 257%;
-      .warning-pc {
-        width: 100%;
-      }
-      .warning-mb {
-        display: none;
-        width: 100%;
-      }
-    }
-    .nayami {
-      position: absolute;
-      height: 1112px;
-      top: 309%;
-      img {
-        width: 100%;
-      }
-    }
-    .konsaru {
-      position: absolute;
-      height: 925px;
-      top: 376%;
-      .konsaru-pc {
-        width: 100%;
-      }
-      .konsaru-mb {
-        display: none;
-        width: 100%;
-      }
-    }
-    .konsaru2 {
-      position: absolute;
-      height: 925px;
-      top: 430%;
-      .konsaru2-pc {
-        width: 100%;
-      }
-      .konsaru2-mb {
-        display: none;
-        width: 100%;
-      }
-    }
-    .tasya-container {
-      position: absolute;
-      width: 750px;
-      top: 500%;
-    }
-    .nagare {
-      position: absolute;
-      top: 643%;
-      .nagare-pc {
-        width: 100%;
-      }
-      .nagare-mb {
-        display: none;
-        width: 100%;
-      }
-    }
-    .yuuryou {
-      position: absolute;
-      top: 816%;
-      left: 8%;
-      img {
-        width: 100%;
-      }
-    }
-    .ng {
-      position: absolute;
-      top: 916%;
-      .ng-pc {
-        width: 100%;
-      }
-      .ng-mb {
-        display: none;
-        width: 100%;
-      }
-    }
-    .yokuaru-container {
-      position: absolute;
-      width: 750px;
-      top: 1005%;
-      .footer-mb {
-        display: none;
-        height: 120px;
-        background: #002882;
-        text-align: center;
-        .footer-content{
-          padding-top: 15px;
-          margin: 0;
-          color: white;
-          a {
-            color: inherit;
-          }
-        }
-        .footer-copy {
-          padding-top: 0px;
-          color: white;
-        }
-      }
-    }
-  }
   .tab_content.tabRight {
+    display: block;
     .tabRight-kanzen {
       img {
         width: 100%;
@@ -369,14 +192,14 @@ body {
     }
     .tabRight-tasya {
       position: absolute;
-      top: 151%;
+      top: 155%;
       img {
         width: 100%;
       }
     }
     .tabRight-konsaru {
       position: absolute;
-      top: 247%;
+      top: 258%;
       .konsaru-pc {
         width: 100%;
       }
@@ -387,7 +210,7 @@ body {
     }
     .tabRight-konsaru2 {
       position: absolute;
-      top: 300%;
+      top: 315%;
       .konsaru2-pc {
         width: 100%;
       }
@@ -399,14 +222,14 @@ body {
     .tabRight-yuryou {
       position: absolute;
       width: 750px;
-      top: 396%;
+      top: 419%;
       .yuryou {
-        margin-top: 30px;
+        margin-top: 44px;
       }
     }
     .tabRight-riyu {
       position: absolute;
-      top: 552%;
+      top: 587%;
       .riyu-pc {
         width: 100%;
       }
@@ -417,7 +240,7 @@ body {
     }
     .tabRight-yokuaru {
       position: absolute;
-      top: 637%;
+      top: 678%;
       .yokuaru {
         margin-bottom: 20px;
       }
@@ -452,42 +275,7 @@ body {
   z-index: 50;
   display: none;
 }
-/*ラジオボタンを全て消す*/
-input[name="tab_item"] {
-  display: none;
-}
 
-/*選択されているタブのコンテンツのみを表示*/
-#all:checked ~ #all_content,
-#programming:checked ~ #programming_content,
-#design:checked ~ #design_content {
-  display: block;
-  z-index: 5;
-}
-.tab_item{
-  br{
-    display: block;
-    content: ""; 
-    margin: 0;
-  }
-}
-/*選択されているタブのスタイルを変える*/
-.tabs input:checked + .tab_item.left {
-  background-color: #2e46d6;
-  color: #fff;
-  height: 120px;
-  margin-top: 0px;
-  line-height: 55px;
-  border-bottom: 8px solid #2e46d6;
-}
-.tabs input:checked + .tab_item.right {
-  background-color: #f03039;
-  border-bottom: 8px solid #f03039;
-  color: #fff;
-  height: 120px;
-  line-height: 55px;
-  margin-top: 0px;
-}
 @media only screen and (max-width: 768px) {
   .background {
     display: none !important;
@@ -668,34 +456,8 @@ input[name="tab_item"] {
 }
 
 @media only screen and (max-width: 415px) {
-  .tabs .tab_item{
-    padding-top: 0;
-    transition: none;
-  }
-  .tabs input:checked + .tab_item.left {
-    line-height: 75px;
-  }
-  .tabs input:checked + .tab_item {
-    br{
-      margin: -35px;
-    }
-  }
-  .tabs input:checked + .tab_item.right {
-    line-height: 75px;
-  }
   .tabs {
     width: 413px !important;
-    .tab_item {
-      font-size: 25px;
-      line-height: 40px;
-      height: 80px;
-    }
-    input:checked + .tab_item.left {
-      height: 100px !important;
-    }
-    input:checked + .tab_item.right {
-      height: 100px !important;
-    }
     .tab_content {
       .sangatsu {
         height: 490px;
@@ -808,11 +570,6 @@ input[name="tab_item"] {
 @media only screen and (max-width: 376px) {
   .tabs {
     width: 375px !important;
-    .tab_item {
-      font-size: 25px;
-      line-height: 40px;
-      height: 80px;
-    }
     .tab_content {
       .tasya-container {
         width: 374px;

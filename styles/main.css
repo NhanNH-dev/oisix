@@ -9,7 +9,6 @@ body {
   z-index: 1;
   position: absolute;
   width: 100%;
-  top: 140px;
 }
 
 .background .background-leftside .bg-kanzen {
@@ -116,7 +115,7 @@ body {
 }
 
 .background .background-rightside {
-  display: none;
+  display: block;
 }
 
 .background .background-rightside .bg-kanzen {
@@ -195,222 +194,11 @@ body {
   width: 750px;
   margin: 0 auto;
   position: relative;
-  /*タブのスタイル*/
   /*タブ切り替えの中身のスタイル*/
 }
 
-.tabs .tab_item {
-  z-index: 5;
-  margin-top: 20px;
-  padding-top: 15px;
-  width: calc(100% / 2);
-  height: 100px;
-  background-color: #d3d3d3;
-  line-height: 45px;
-  text-align: center;
-  color: #fff;
+.tabs .tab_content.tabRight {
   display: block;
-  float: left;
-  border-radius: 20px 20px 0 0;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  font-size: 36px;
-  font-weight: 500;
-  border-bottom: 8px solid #2e46d6;
-}
-
-.tabs .tab_item:hover {
-  opacity: 0.85;
-}
-
-.tabs .tab_content {
-  display: none;
-  clear: both;
-  overflow: hidden;
-}
-
-.tabs .tab_content .kanzen img {
-  width: 100%;
-}
-
-.tabs .tab_content .sangatsu {
-  height: 947px;
-  width: 100%;
-  position: relative;
-}
-
-.tabs .tab_content .sangatsu .month3 {
-  width: inherit;
-  margin-top: 55px;
-  position: absolute;
-}
-
-.tabs .tab_content .sangatsu .button {
-  top: 44%;
-  left: 7%;
-  position: absolute;
-}
-
-.tabs .tab_content .sangatsu .button:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
-
-.tabs .tab_content .no1 {
-  position: absolute;
-  height: 1484px;
-  top: 104%;
-}
-
-.tabs .tab_content .no1 .no1-pc {
-  width: 100%;
-}
-
-.tabs .tab_content .no1 .no1-mb {
-  display: none;
-  width: 100%;
-}
-
-.tabs .tab_content .yottsu {
-  position: absolute;
-  height: 1090px;
-  top: 191%;
-}
-
-.tabs .tab_content .yottsu .yottsu-pc {
-  width: 100%;
-}
-
-.tabs .tab_content .yottsu .yottsu-mb {
-  display: none;
-  width: 100%;
-}
-
-.tabs .tab_content .warning {
-  position: absolute;
-  height: 835px;
-  top: 257%;
-}
-
-.tabs .tab_content .warning .warning-pc {
-  width: 100%;
-}
-
-.tabs .tab_content .warning .warning-mb {
-  display: none;
-  width: 100%;
-}
-
-.tabs .tab_content .nayami {
-  position: absolute;
-  height: 1112px;
-  top: 309%;
-}
-
-.tabs .tab_content .nayami img {
-  width: 100%;
-}
-
-.tabs .tab_content .konsaru {
-  position: absolute;
-  height: 925px;
-  top: 376%;
-}
-
-.tabs .tab_content .konsaru .konsaru-pc {
-  width: 100%;
-}
-
-.tabs .tab_content .konsaru .konsaru-mb {
-  display: none;
-  width: 100%;
-}
-
-.tabs .tab_content .konsaru2 {
-  position: absolute;
-  height: 925px;
-  top: 430%;
-}
-
-.tabs .tab_content .konsaru2 .konsaru2-pc {
-  width: 100%;
-}
-
-.tabs .tab_content .konsaru2 .konsaru2-mb {
-  display: none;
-  width: 100%;
-}
-
-.tabs .tab_content .tasya-container {
-  position: absolute;
-  width: 750px;
-  top: 500%;
-}
-
-.tabs .tab_content .nagare {
-  position: absolute;
-  top: 643%;
-}
-
-.tabs .tab_content .nagare .nagare-pc {
-  width: 100%;
-}
-
-.tabs .tab_content .nagare .nagare-mb {
-  display: none;
-  width: 100%;
-}
-
-.tabs .tab_content .yuuryou {
-  position: absolute;
-  top: 816%;
-  left: 8%;
-}
-
-.tabs .tab_content .yuuryou img {
-  width: 100%;
-}
-
-.tabs .tab_content .ng {
-  position: absolute;
-  top: 916%;
-}
-
-.tabs .tab_content .ng .ng-pc {
-  width: 100%;
-}
-
-.tabs .tab_content .ng .ng-mb {
-  display: none;
-  width: 100%;
-}
-
-.tabs .tab_content .yokuaru-container {
-  position: absolute;
-  width: 750px;
-  top: 1005%;
-}
-
-.tabs .tab_content .yokuaru-container .footer-mb {
-  display: none;
-  height: 120px;
-  background: #002882;
-  text-align: center;
-}
-
-.tabs .tab_content .yokuaru-container .footer-mb .footer-content {
-  padding-top: 15px;
-  margin: 0;
-  color: white;
-}
-
-.tabs .tab_content .yokuaru-container .footer-mb .footer-content a {
-  color: inherit;
-}
-
-.tabs .tab_content .yokuaru-container .footer-mb .footer-copy {
-  padding-top: 0px;
-  color: white;
 }
 
 .tabs .tab_content.tabRight .tabRight-kanzen img {
@@ -454,7 +242,7 @@ body {
 
 .tabs .tab_content.tabRight .tabRight-tasya {
   position: absolute;
-  top: 151%;
+  top: 155%;
 }
 
 .tabs .tab_content.tabRight .tabRight-tasya img {
@@ -463,7 +251,7 @@ body {
 
 .tabs .tab_content.tabRight .tabRight-konsaru {
   position: absolute;
-  top: 247%;
+  top: 258%;
 }
 
 .tabs .tab_content.tabRight .tabRight-konsaru .konsaru-pc {
@@ -477,7 +265,7 @@ body {
 
 .tabs .tab_content.tabRight .tabRight-konsaru2 {
   position: absolute;
-  top: 300%;
+  top: 315%;
 }
 
 .tabs .tab_content.tabRight .tabRight-konsaru2 .konsaru2-pc {
@@ -492,16 +280,16 @@ body {
 .tabs .tab_content.tabRight .tabRight-yuryou {
   position: absolute;
   width: 750px;
-  top: 396%;
+  top: 419%;
 }
 
 .tabs .tab_content.tabRight .tabRight-yuryou .yuryou {
-  margin-top: 30px;
+  margin-top: 44px;
 }
 
 .tabs .tab_content.tabRight .tabRight-riyu {
   position: absolute;
-  top: 552%;
+  top: 587%;
 }
 
 .tabs .tab_content.tabRight .tabRight-riyu .riyu-pc {
@@ -515,7 +303,7 @@ body {
 
 .tabs .tab_content.tabRight .tabRight-yokuaru {
   position: absolute;
-  top: 637%;
+  top: 678%;
 }
 
 .tabs .tab_content.tabRight .tabRight-yokuaru .yokuaru {
@@ -553,44 +341,6 @@ body {
   text-align: center;
   z-index: 50;
   display: none;
-}
-
-/*ラジオボタンを全て消す*/
-input[name="tab_item"] {
-  display: none;
-}
-
-/*選択されているタブのコンテンツのみを表示*/
-#all:checked ~ #all_content,
-#programming:checked ~ #programming_content,
-#design:checked ~ #design_content {
-  display: block;
-  z-index: 5;
-}
-
-.tab_item br {
-  display: block;
-  content: "";
-  margin: 0;
-}
-
-/*選択されているタブのスタイルを変える*/
-.tabs input:checked + .tab_item.left {
-  background-color: #2e46d6;
-  color: #fff;
-  height: 120px;
-  margin-top: 0px;
-  line-height: 55px;
-  border-bottom: 8px solid #2e46d6;
-}
-
-.tabs input:checked + .tab_item.right {
-  background-color: #f03039;
-  border-bottom: 8px solid #f03039;
-  color: #fff;
-  height: 120px;
-  line-height: 55px;
-  margin-top: 0px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -759,33 +509,8 @@ input[name="tab_item"] {
 }
 
 @media only screen and (max-width: 415px) {
-  .tabs .tab_item {
-    padding-top: 0;
-    -webkit-transition: none;
-    transition: none;
-  }
-  .tabs input:checked + .tab_item.left {
-    line-height: 75px;
-  }
-  .tabs input:checked + .tab_item br {
-    margin: -35px;
-  }
-  .tabs input:checked + .tab_item.right {
-    line-height: 75px;
-  }
   .tabs {
     width: 413px !important;
-  }
-  .tabs .tab_item {
-    font-size: 25px;
-    line-height: 40px;
-    height: 80px;
-  }
-  .tabs input:checked + .tab_item.left {
-    height: 100px !important;
-  }
-  .tabs input:checked + .tab_item.right {
-    height: 100px !important;
   }
   .tabs .tab_content .sangatsu {
     height: 490px;
@@ -893,11 +618,6 @@ input[name="tab_item"] {
 @media only screen and (max-width: 376px) {
   .tabs {
     width: 375px !important;
-  }
-  .tabs .tab_item {
-    font-size: 25px;
-    line-height: 40px;
-    height: 80px;
   }
   .tabs .tab_content .tasya-container {
     width: 374px;
