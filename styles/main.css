@@ -568,7 +568,7 @@ body {
     display: block;
   }
   .tabs .tab_content.tabRight .tabRight-sangatsu .month3 {
-    margin-top: 40px;
+    margin-top: 30px;
   }
   .tabs .tab_content.tabRight .tabRight-sangatsu .button {
     width: 80%;
@@ -582,26 +582,26 @@ body {
     top: 102%;
   }
   .tabs .tab_content.tabRight .tabRight-tasya {
-    top: 148%;
+    top: 153%;
   }
   .tabs .tab_content.tabRight .tabRight-konsaru {
-    top: 236%;
+    top: 251%;
   }
   .tabs .tab_content.tabRight .tabRight-konsaru2 {
-    top: 286%;
+    top: 307%;
   }
   .tabs .tab_content.tabRight .tabRight-yuryou {
-    top: 380%;
+    top: 412%;
     width: 413px;
   }
   .tabs .tab_content.tabRight .tabRight-yuryou img {
     width: 100%;
   }
   .tabs .tab_content.tabRight .tabRight-riyu {
-    top: 526%;
+    top: 575%;
   }
   .tabs .tab_content.tabRight .tabRight-yokuaru {
-    top: 615%;
+    top: 675%;
   }
   .tabs .tab_content.tabRight .tabRight-yokuaru .footer-mb {
     height: 125px;
@@ -638,26 +638,26 @@ body {
     top: 97%;
   }
   .tabs .tab_content.tabRight .tabRight-tasya {
-    top: 141%;
+    top: 145%;
   }
   .tabs .tab_content.tabRight .tabRight-konsaru {
-    top: 224%;
+    top: 237%;
   }
   .tabs .tab_content.tabRight .tabRight-konsaru2 {
-    top: 272%;
+    top: 290%;
   }
   .tabs .tab_content.tabRight .tabRight-yuryou {
-    top: 360%;
+    top: 390%;
     width: 374px;
   }
   .tabs .tab_content.tabRight .tabRight-yuryou .yuryou {
     margin-top: -30px;
   }
   .tabs .tab_content.tabRight .tabRight-riyu {
-    top: 497%;
+    top: 542%;
   }
   .tabs .tab_content.tabRight .tabRight-yokuaru {
-    top: 580%;
+    top: 635%;
   }
   .tabs .tab_content.tabRight .tabRight-yokuaru .tabRight-sangatsu {
     height: 535px;
