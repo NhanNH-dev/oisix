@@ -317,7 +317,7 @@ body {
     width: 375px !important;
   }
   .tabs .tab_content.tabRight .tabRight-sangatsu .button {
-    top: 50%;
+    top: 47%;
   }
   .tabs .tab_content.tabRight .tabRight-warning {
     top: 96%;
@@ -348,6 +348,6 @@ body {
     height: 535px;
   }
   .tabs .tab_content.tabRight .tabRight-yokuaru .tabRight-sangatsu .button {
-    top: 53%;
+    top: 47%;
   }
 }/*# sourceMappingURL=main.css.map */
