@@ -10,75 +10,59 @@ body {
   position: absolute;
   width: 100%;
 }
-
 .background .background-rightside {
   display: block;
 }
-
 .background .background-rightside .bg-kanzen {
   height: 803px;
   background: #f4f4f4;
 }
-
 .background .background-rightside .bg-threemonth {
   height: 1080px;
 }
-
 .background .background-rightside .bg-warning {
   height: 887px;
 }
-
 .background .background-rightside .bg-warning img {
   width: 100%;
   height: inherit;
 }
-
 .background .background-rightside .bg-tasya {
   height: 1910px;
 }
-
 .background .background-rightside .bg-konsaru {
   height: 1057px;
   background: #fffee8;
 }
-
 .background .background-rightside .bg-konsaru2 {
   height: 1982px;
 }
-
 .background .background-rightside .bg-konsaru2 img {
   width: 100%;
   height: inherit;
 }
-
 .background .background-rightside .bg-yuka {
   height: 3020px;
 }
-
 .background .background-rightside .bg-riyu {
   height: 1750px;
 }
-
 .background .background-rightside .bg-riyu img {
   width: 100%;
   height: inherit;
 }
-
 .background .background-rightside .bg-yokuaru {
-  height: 3675px;
+  height: 3650px;
 }
-
 .background .background-rightside .footer {
   height: 80px;
   background: #002882;
   text-align: center;
 }
-
 .background .background-rightside .footer p {
   padding-top: 25px;
   color: white;
 }
-
 .background .background-rightside .footer p a {
   color: inherit;
 }
@@ -93,137 +77,109 @@ body {
   position: relative;
   /*タブ切り替えの中身のスタイル*/
 }
-
 .tabs .tab_content.tabRight {
   display: block;
 }
-
 .tabs .tab_content.tabRight .tabRight-kanzen img {
   width: 100%;
 }
-
 .tabs .tab_content.tabRight .tabRight-sangatsu {
   position: relative;
   height: 1037px;
 }
-
 .tabs .tab_content.tabRight .tabRight-sangatsu .month3 {
   margin-top: 70px;
   position: absolute;
 }
-
 .tabs .tab_content.tabRight .tabRight-sangatsu .button {
-  top: 53%;
+  top: 51%;
   left: 7%;
   position: absolute;
 }
-
 .tabs .tab_content.tabRight .tabRight-sangatsu .button:hover {
   cursor: pointer;
   opacity: 0.8;
 }
-
 .tabs .tab_content.tabRight .tabRight-warning {
   position: absolute;
   top: 106%;
 }
-
 .tabs .tab_content.tabRight .tabRight-warning .warning-pc {
   width: 100%;
 }
-
 .tabs .tab_content.tabRight .tabRight-warning .warning-mb {
   display: none;
   width: 100%;
 }
-
 .tabs .tab_content.tabRight .tabRight-tasya {
   position: absolute;
   top: 155%;
 }
-
 .tabs .tab_content.tabRight .tabRight-tasya img {
   width: 100%;
 }
-
 .tabs .tab_content.tabRight .tabRight-konsaru {
   position: absolute;
   top: 258%;
 }
-
 .tabs .tab_content.tabRight .tabRight-konsaru .konsaru-pc {
   width: 100%;
 }
-
 .tabs .tab_content.tabRight .tabRight-konsaru .konsaru-mb {
   display: none;
   width: 100%;
 }
-
 .tabs .tab_content.tabRight .tabRight-konsaru2 {
   position: absolute;
   top: 315%;
 }
-
 .tabs .tab_content.tabRight .tabRight-konsaru2 .konsaru2-pc {
   width: 100%;
 }
-
 .tabs .tab_content.tabRight .tabRight-konsaru2 .konsaru2-mb {
   display: none;
   width: 100%;
 }
-
 .tabs .tab_content.tabRight .tabRight-yuryou {
   position: absolute;
   width: 750px;
   top: 419%;
 }
-
 .tabs .tab_content.tabRight .tabRight-yuryou .yuryou {
   margin-top: 44px;
 }
-
 .tabs .tab_content.tabRight .tabRight-riyu {
   position: absolute;
   top: 587%;
 }
-
 .tabs .tab_content.tabRight .tabRight-riyu .riyu-pc {
   width: 100%;
 }
-
 .tabs .tab_content.tabRight .tabRight-riyu .riyu-mb {
   display: none;
   width: 100%;
 }
-
 .tabs .tab_content.tabRight .tabRight-yokuaru {
   position: absolute;
   top: 678%;
 }
-
 .tabs .tab_content.tabRight .tabRight-yokuaru .yokuaru {
   margin-bottom: 20px;
 }
-
 .tabs .tab_content.tabRight .tabRight-yokuaru .footer-mb {
   display: none;
   height: 120px;
   background: #002882;
   text-align: center;
 }
-
 .tabs .tab_content.tabRight .tabRight-yokuaru .footer-mb .footer-content {
   padding-top: 15px;
   margin: 0;
   color: white;
 }
-
 .tabs .tab_content.tabRight .tabRight-yokuaru .footer-mb .footer-content a {
   color: inherit;
 }
-
 .tabs .tab_content.tabRight .tabRight-yokuaru .footer-mb .footer-copy {
   padding-top: 0px;
   color: white;
@@ -404,7 +360,6 @@ body {
     display: block;
   }
 }
-
 @media only screen and (max-width: 415px) {
   .tabs {
     width: 413px !important;
@@ -511,7 +466,6 @@ body {
     width: 90%;
   }
 }
-
 @media only screen and (max-width: 376px) {
   .tabs {
     width: 375px !important;
@@ -562,5 +516,4 @@ body {
   .tabs .tab_content.tabRight .tabRight-yokuaru .tabRight-sangatsu .button {
     top: 53%;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
