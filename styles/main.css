@@ -11,178 +11,139 @@ body {
   width: 100%;
   top: 140px;
 }
-
 .background .background-leftside .bg-kanzen {
   height: 803px;
   background: #f4f4f4;
 }
-
 .background .background-leftside .bg-sangatsu {
   height: 950px;
 }
-
 .background .background-leftside .bg-no1 {
   height: 1644px;
 }
-
 .background .background-leftside .bg-no1 img {
   width: 100%;
   height: 1644px;
 }
-
 .background .background-leftside .bg-4tsu {
   height: 1249px;
 }
-
 .background .background-leftside .bg-4tsu img {
   width: 100%;
   height: 1249px;
 }
-
 .background .background-leftside .bg-ng {
   height: 995px;
 }
-
 .background .background-leftside .bg-ng img {
   width: 100%;
   height: 995px;
 }
-
 .background .background-leftside .bg-nayami {
   height: 1272px;
 }
-
 .background .background-leftside .bg-kosarubg {
   height: 1015px;
 }
-
 .background .background-leftside .bg-kosarubg img {
   width: 100%;
   height: 1015px;
 }
-
 .background .background-leftside .bg-4tsu2 {
   height: 1401px;
 }
-
 .background .background-leftside .bg-4tsu2 img {
   width: 100%;
   height: 1401px;
 }
-
 .background .background-leftside .bg-tasya {
   height: 2638px;
 }
-
 .background .background-leftside .bg-no1-2 {
   height: 3289px;
 }
-
 .background .background-leftside .bg-no1-2 img {
   width: 100%;
   height: inherit;
 }
-
 .background .background-leftside .bg-yuryo {
   height: 1875px;
 }
-
 .background .background-leftside .bg-kosarubg2 {
   height: 1742px;
 }
-
 .background .background-leftside .bg-kosarubg2 img {
   width: 100%;
   height: inherit;
 }
-
 .background .background-leftside .bg-yokuaru {
   height: 3820px;
 }
-
 .background .background-leftside .footer {
   height: 80px;
   background: #002882;
   text-align: center;
 }
-
 .background .background-leftside .footer p {
   padding-top: 25px;
   color: white;
 }
-
 .background .background-leftside .footer p a {
   color: inherit;
 }
-
 .background .background-rightside {
   display: none;
 }
-
 .background .background-rightside .bg-kanzen {
   height: 803px;
   background: #f4f4f4;
 }
-
 .background .background-rightside .bg-threemonth {
   height: 1080px;
 }
-
 .background .background-rightside .bg-warning {
   height: 887px;
 }
-
 .background .background-rightside .bg-warning img {
   width: 100%;
   height: inherit;
 }
-
 .background .background-rightside .bg-tasya {
   height: 1910px;
 }
-
 .background .background-rightside .bg-konsaru {
   height: 1057px;
   background: #fffee8;
 }
-
 .background .background-rightside .bg-konsaru2 {
   height: 1982px;
 }
-
 .background .background-rightside .bg-konsaru2 img {
   width: 100%;
   height: inherit;
 }
-
 .background .background-rightside .bg-yuka {
   height: 3020px;
 }
-
 .background .background-rightside .bg-riyu {
   height: 1750px;
 }
-
 .background .background-rightside .bg-riyu img {
   width: 100%;
   height: inherit;
 }
-
 .background .background-rightside .bg-yokuaru {
   height: 3675px;
 }
-
 .background .background-rightside .footer {
   height: 80px;
   background: #002882;
   text-align: center;
 }
-
 .background .background-rightside .footer p {
   padding-top: 25px;
   color: white;
 }
-
 .background .background-rightside .footer p a {
   color: inherit;
 }
@@ -198,12 +159,11 @@ body {
   /*タブのスタイル*/
   /*タブ切り替えの中身のスタイル*/
 }
-
 .tabs .tab_item {
   z-index: 5;
   margin-top: 20px;
   padding-top: 15px;
-  width: calc(100% / 2);
+  width: 50%;
   height: 100px;
   background-color: #d3d3d3;
   line-height: 45px;
@@ -212,333 +172,267 @@ body {
   display: block;
   float: left;
   border-radius: 20px 20px 0 0;
-  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   font-size: 36px;
   font-weight: 500;
   border-bottom: 8px solid #2e46d6;
 }
-
 .tabs .tab_item:hover {
   opacity: 0.85;
 }
-
 .tabs .tab_content {
   display: none;
   clear: both;
   overflow: hidden;
 }
-
 .tabs .tab_content .kanzen img {
   width: 100%;
 }
-
 .tabs .tab_content .sangatsu {
   height: 947px;
   width: 100%;
   position: relative;
 }
-
 .tabs .tab_content .sangatsu .month3 {
   width: inherit;
   margin-top: 55px;
   position: absolute;
 }
-
 .tabs .tab_content .sangatsu .button {
   top: 44%;
   left: 7%;
   position: absolute;
 }
-
 .tabs .tab_content .sangatsu .button:hover {
   cursor: pointer;
   opacity: 0.8;
 }
-
 .tabs .tab_content .no1 {
   position: absolute;
   height: 1484px;
   top: 104%;
 }
-
 .tabs .tab_content .no1 .no1-pc {
   width: 100%;
 }
-
 .tabs .tab_content .no1 .no1-mb {
   display: none;
   width: 100%;
 }
-
 .tabs .tab_content .yottsu {
   position: absolute;
   height: 1090px;
   top: 191%;
 }
-
 .tabs .tab_content .yottsu .yottsu-pc {
   width: 100%;
 }
-
 .tabs .tab_content .yottsu .yottsu-mb {
   display: none;
   width: 100%;
 }
-
 .tabs .tab_content .warning {
   position: absolute;
   height: 835px;
   top: 257%;
 }
-
 .tabs .tab_content .warning .warning-pc {
   width: 100%;
 }
-
 .tabs .tab_content .warning .warning-mb {
   display: none;
   width: 100%;
 }
-
 .tabs .tab_content .nayami {
   position: absolute;
   height: 1112px;
   top: 309%;
 }
-
 .tabs .tab_content .nayami img {
   width: 100%;
 }
-
 .tabs .tab_content .konsaru {
   position: absolute;
   height: 925px;
   top: 376%;
 }
-
 .tabs .tab_content .konsaru .konsaru-pc {
   width: 100%;
 }
-
 .tabs .tab_content .konsaru .konsaru-mb {
   display: none;
   width: 100%;
 }
-
 .tabs .tab_content .konsaru2 {
   position: absolute;
   height: 925px;
   top: 430%;
 }
-
 .tabs .tab_content .konsaru2 .konsaru2-pc {
   width: 100%;
 }
-
 .tabs .tab_content .konsaru2 .konsaru2-mb {
   display: none;
   width: 100%;
 }
-
 .tabs .tab_content .tasya-container {
   position: absolute;
   width: 750px;
   top: 500%;
 }
-
 .tabs .tab_content .nagare {
   position: absolute;
   top: 643%;
 }
-
 .tabs .tab_content .nagare .nagare-pc {
   width: 100%;
 }
-
 .tabs .tab_content .nagare .nagare-mb {
   display: none;
   width: 100%;
 }
-
 .tabs .tab_content .yuuryou {
   position: absolute;
   top: 816%;
   left: 8%;
 }
-
 .tabs .tab_content .yuuryou img {
   width: 100%;
 }
-
 .tabs .tab_content .ng {
   position: absolute;
   top: 916%;
 }
-
 .tabs .tab_content .ng .ng-pc {
   width: 100%;
 }
-
 .tabs .tab_content .ng .ng-mb {
   display: none;
   width: 100%;
 }
-
 .tabs .tab_content .yokuaru-container {
   position: absolute;
   width: 750px;
   top: 1005%;
 }
-
 .tabs .tab_content .yokuaru-container .footer-mb {
   display: none;
   height: 120px;
   background: #002882;
   text-align: center;
 }
-
 .tabs .tab_content .yokuaru-container .footer-mb .footer-content {
-  padding-top: 15px;
+  padding: 10px 10px 0;
   margin: 0;
   color: white;
 }
-
 .tabs .tab_content .yokuaru-container .footer-mb .footer-content a {
   color: inherit;
 }
-
 .tabs .tab_content .yokuaru-container .footer-mb .footer-copy {
   padding-top: 0px;
   color: white;
 }
-
 .tabs .tab_content.tabRight .tabRight-kanzen img {
   width: 100%;
 }
-
 .tabs .tab_content.tabRight .tabRight-sangatsu {
   position: relative;
   height: 1037px;
 }
-
 .tabs .tab_content.tabRight .tabRight-sangatsu .month3 {
   margin-top: 70px;
   position: absolute;
 }
-
 .tabs .tab_content.tabRight .tabRight-sangatsu .button {
   top: 53%;
   left: 7%;
   position: absolute;
 }
-
 .tabs .tab_content.tabRight .tabRight-sangatsu .button:hover {
   cursor: pointer;
   opacity: 0.8;
 }
-
 .tabs .tab_content.tabRight .tabRight-warning {
   position: absolute;
   top: 106%;
 }
-
 .tabs .tab_content.tabRight .tabRight-warning .warning-pc {
   width: 100%;
 }
-
 .tabs .tab_content.tabRight .tabRight-warning .warning-mb {
   display: none;
   width: 100%;
 }
-
 .tabs .tab_content.tabRight .tabRight-tasya {
   position: absolute;
   top: 151%;
 }
-
 .tabs .tab_content.tabRight .tabRight-tasya img {
   width: 100%;
 }
-
 .tabs .tab_content.tabRight .tabRight-konsaru {
   position: absolute;
   top: 247%;
 }
-
 .tabs .tab_content.tabRight .tabRight-konsaru .konsaru-pc {
   width: 100%;
 }
-
 .tabs .tab_content.tabRight .tabRight-konsaru .konsaru-mb {
   display: none;
   width: 100%;
 }
-
 .tabs .tab_content.tabRight .tabRight-konsaru2 {
   position: absolute;
   top: 300%;
 }
-
 .tabs .tab_content.tabRight .tabRight-konsaru2 .konsaru2-pc {
   width: 100%;
 }
-
 .tabs .tab_content.tabRight .tabRight-konsaru2 .konsaru2-mb {
   display: none;
   width: 100%;
 }
-
 .tabs .tab_content.tabRight .tabRight-yuryou {
   position: absolute;
   width: 750px;
   top: 396%;
 }
-
 .tabs .tab_content.tabRight .tabRight-yuryou .yuryou {
   margin-top: 30px;
 }
-
 .tabs .tab_content.tabRight .tabRight-riyu {
   position: absolute;
   top: 552%;
 }
-
 .tabs .tab_content.tabRight .tabRight-riyu .riyu-pc {
   width: 100%;
 }
-
 .tabs .tab_content.tabRight .tabRight-riyu .riyu-mb {
   display: none;
   width: 100%;
 }
-
 .tabs .tab_content.tabRight .tabRight-yokuaru {
   position: absolute;
   top: 637%;
 }
-
 .tabs .tab_content.tabRight .tabRight-yokuaru .yokuaru {
   margin-bottom: 20px;
 }
-
 .tabs .tab_content.tabRight .tabRight-yokuaru .footer-mb {
   display: none;
   height: 120px;
   background: #002882;
   text-align: center;
 }
-
 .tabs .tab_content.tabRight .tabRight-yokuaru .footer-mb .footer-content {
-  padding-top: 15px;
+  padding: 10px 10px 0;
   margin: 0;
   color: white;
 }
-
 .tabs .tab_content.tabRight .tabRight-yokuaru .footer-mb .footer-content a {
   color: inherit;
 }
-
 .tabs .tab_content.tabRight .tabRight-yokuaru .footer-mb .footer-copy {
   padding-top: 0px;
   color: white;
@@ -556,7 +450,7 @@ body {
 }
 
 /*ラジオボタンを全て消す*/
-input[name="tab_item"] {
+input[name=tab_item] {
   display: none;
 }
 
@@ -757,11 +651,9 @@ input[name="tab_item"] {
     display: block;
   }
 }
-
 @media only screen and (max-width: 415px) {
   .tabs .tab_item {
     padding-top: 0;
-    -webkit-transition: none;
     transition: none;
   }
   .tabs input:checked + .tab_item.left {
@@ -889,7 +781,6 @@ input[name="tab_item"] {
     width: 90%;
   }
 }
-
 @media only screen and (max-width: 376px) {
   .tabs {
     width: 375px !important;
@@ -945,5 +836,4 @@ input[name="tab_item"] {
   .tabs .tab_content.tabRight .tabRight-yokuaru .tabRight-sangatsu .button {
     top: 53%;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
