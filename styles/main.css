@@ -60,7 +60,7 @@ body {
   text-align: center;
 }
 .background .background-rightside .footer p {
-  padding-top: 25px;
+  padding-top: 15px;
   color: white;
 }
 .background .background-rightside .footer p a {
@@ -173,7 +173,7 @@ body {
   text-align: center;
 }
 .tabs .tab_content.tabRight .tabRight-yokuaru .footer-mb .footer-content {
-  padding-top: 15px;
+  padding: 15px 10px 0;
   margin: 0;
   color: white;
 }
